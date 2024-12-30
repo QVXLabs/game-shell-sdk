@@ -1,0 +1,43 @@
+#!/bin/bash
+
+shopt -s nocasematch
+
+function archive_directory() {
+    for arg in "$@"; do
+	if [[ "$arg" == *.a ]]; then
+	    echo $(dirname "$arg")
+	    break
+	fi
+    done
+}
+
+function mount_volume_flag_list() {
+    local volume_mounts=()
+    for dir in "$@"; do
+	volume_mounts+=("-v $(realpath "$dir"):$(realpath "$dir")")
+    done
+    echo "${volume_mounts[@]}"
+}
+
+
+# get working directory
+WORKING_DIR="$(pwd)"
+
+# capture image and shift out argument
+IMAGE=$1
+
+# verify image has been created
+if [[ "$(docker images -q $IMAGE_NAME 2> /dev/null)" == "" ]]; then
+    echo "Docker image '$IMAGE_NAME' not found. Please run setup-docker.sh"
+    exit 1
+fi
+
+# run command
+DOCKER_VOL_FLAGS="$(mount_volume_flag_list $(archive_directory "$@"))"
+
+docker run --rm \
+       --platform linux/arm/v7
+       ${DOCKER_VOL_FLAGS[@]} \
+       -w "$WORKING_DIR" \
+       $IMAGE \
+       "${@:2}"

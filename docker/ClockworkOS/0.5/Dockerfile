@@ -1,5 +1,6 @@
 FROM debian/eol:stretch
 WORKDIR /home/build
+LABEL org.opencontainers.image.authors="afalls@qvxlabs.com"
 
 # setup packages
 COPY sources.list /etc/apt/sources.list
