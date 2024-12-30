@@ -3,4 +3,4 @@
 CC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 IMAGE=qvxlabs/gameshellsdk/clockworkos:0.5
 
-"$CC_DIR/as-exec" "$IMAGE" as "$@"
+bash "$CC_DIR/ar-exec" "$IMAGE" ar "$@"

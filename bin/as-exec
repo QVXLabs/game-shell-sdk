@@ -5,7 +5,7 @@ shopt -s nocasematch
 function input_directories() {
     local src_dirs=()
     for src_file in "$@"; do
-	if [[ "$src_file" =~ .*\.(c|cpp|cxx|s|o)$ ]]; then
+	if [[ "$src_file" =~ .*\.(s)$ ]]; then
 	    local src_dir=$(dirname "$src_file")
 	    if [[ ! " ${src_dirs[@]} " =~ " ${src_dir} " ]]; then
 		src_dirs+=("$src_dir")
@@ -56,6 +56,7 @@ fi
 DOCKER_VOL_FLAGS="$(mount_volume_flag_list $(input_directories "$@") $(output_directory "$@"))"
 
 docker run --rm \
+       --platform linux/arm/v7
        ${DOCKER_VOL_FLAGS[@]} \
        -w "$WORKING_DIR" \
        $IMAGE \

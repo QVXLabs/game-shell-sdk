@@ -8,6 +8,8 @@ get_filename_component(
 set(CMAKE_C_COMPILER "${GAMESHELL_SDK_ROOT}/bin/gcc-clockworkos-0.5")
 set(CMAKE_CXX_COMPILER "${GAMESHELL_SDK_ROOT}/bin/g++-clockworkos-0.5")
 set(CMAKE_ASM_COMPILER "${GAMESHELL_SDK_ROOT}/bin/as-clockworkos-0.5")
+set(CMAKE_AR "${GAMESHELL_SDK_ROOT}/bin/ar-clockworkos-0.5")
+set(CMAKE_RANLIB "${GAMESHELL_SDK_ROOT}/bin/ranlib-clockworkos-0.5")
 
 set(DEFAULT_FLAGS "-mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard")
 if(CLOCKWORK_ENABLE_THUMB)
