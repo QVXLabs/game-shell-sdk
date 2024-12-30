@@ -1,5 +1,8 @@
 #!/bin/bash
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/common.sh"
+
 shopt -s nocasematch
 
 function archive_directory() {
@@ -10,15 +13,6 @@ function archive_directory() {
 	fi
     done
 }
-
-function mount_volume_flag_list() {
-    local volume_mounts=()
-    for dir in "$@"; do
-	volume_mounts+=("-v $(realpath "$dir"):$(realpath "$dir")")
-    done
-    echo "${volume_mounts[@]}"
-}
-
 
 # get working directory
 WORKING_DIR="$(pwd)"
