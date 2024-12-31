@@ -241,6 +241,7 @@ libbind9-140
 libbinio1v5
 libbison-dev
 libblas-common
+libblas-dev
 libblas3
 libblkid1
 libbluray1
@@ -352,6 +353,7 @@ libfile-fcntllock-perl
 libfile-listing-perl
 libfile-stripnondeterminism-perl
 libflac8
+libflac-dev
 libfluidsynth1
 libfont-afm-perl
 libfontconfig1
@@ -520,9 +522,12 @@ liblognorm5
 libltdl-dev
 libltdl7
 liblua5.1-0
+liblua5.1-0-dev
 liblua5.3-0
+liblua5.3-dev
 libluajit-5.1-2
 libluajit-5.1-common
+libluajit-5.1-dev
 liblwp-mediatypes-perl
 liblwp-protocol-https-perl
 liblwres141
@@ -552,6 +557,7 @@ libmpcdec6
 libmpdclient2
 libmpdec2
 libmpeg2-4
+libmpeg2-4-dev
 libmpfr4
 libmpg123-0
 libmtdev1
@@ -783,6 +789,7 @@ libtinfo-dev
 libtinfo5
 libtool
 libturbojpeg0
+libturbojpeg0-dev
 libtwolame0
 libtxc-dxtn-s2tc
 libubsan0
@@ -814,7 +821,9 @@ libvorbis0a
 libvorbisenc2
 libvorbisfile3
 libvorbisidec1
+libvorbis-dev
 libvpx4
+libvpx-dev
 libvulkan-dev
 libvulkan1
 libwacom-bin
@@ -912,6 +921,7 @@ libxkbfile-dev
 libxkbfile1
 libxml-parser-perl
 libxml2
+libxml2-dev
 libxmu-dev
 libxmu-headers
 libxmu6
@@ -946,6 +956,7 @@ libxxf86vm-dev
 libxxf86vm1
 libyajl2
 libzstd1
+libzstd-dev
 libzvbi-common
 libzvbi0
 libzzip-0-13
