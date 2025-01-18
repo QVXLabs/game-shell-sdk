@@ -1,0 +1,15 @@
+
+set(ENV{PKG_CONFIG_PATH} "/Users/afalls/code/game-shell-sdk/pkgconf/ClockworkOS/0.5")
+find_package(PkgConfig REQUIRED)
+
+pkg_check_modules(COMPOSITEPROTO REQUIRED compositeproto)
+
+add_library(COMPOSITEPROTO INTERFACE IMPORTED)
+set_target_properties(COMPOSITEPROTO PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
+                      "${COMPOSITEPROTO_INCLUDE_DIRS}")
+set_target_properties(COMPOSITEPROTO PROPERTIES INTERFACE_LINK_DIRECTORIES
+                      "${COMPOSITEPROTO_LIBRARY_DIRS}")
+set_target_properties(COMPOSITEPROTO PROPERTIES INTERFACE_LINK_LIBRARIES
+                      "${COMPOSITEPROTO_LIB_LIBRARIES}")
+set_target_properties(COMPOSITEPROTO PROPERTIES INTERFACE_COMPILE_OPTIONS
+                      "${COMPOSITEPROTO_CFLAGS_OTHER}")
