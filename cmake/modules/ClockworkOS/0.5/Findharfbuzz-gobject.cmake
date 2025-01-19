@@ -1,15 +1,14 @@
 
-set(ENV{PKG_CONFIG_PATH} "/Users/afalls/code/game-shell-sdk/pkgconf/ClockworkOS/0.5")
 find_package(PkgConfig REQUIRED)
 
 pkg_check_modules(HARFBUZZ_GOBJECT REQUIRED harfbuzz-gobject)
 
-add_library(HARFBUZZ_GOBJECT INTERFACE IMPORTED)
-set_target_properties(HARFBUZZ_GOBJECT PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
+add_library(harfbuzz_gobject::harfbuzz_gobject INTERFACE IMPORTED)
+set_target_properties(harfbuzz_gobject::harfbuzz_gobject PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
                       "${HARFBUZZ_GOBJECT_INCLUDE_DIRS}")
-set_target_properties(HARFBUZZ_GOBJECT PROPERTIES INTERFACE_LINK_DIRECTORIES
+set_target_properties(harfbuzz_gobject::harfbuzz_gobject PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${HARFBUZZ_GOBJECT_LIBRARY_DIRS}")
-set_target_properties(HARFBUZZ_GOBJECT PROPERTIES INTERFACE_LINK_LIBRARIES
+set_target_properties(harfbuzz_gobject::harfbuzz_gobject PROPERTIES INTERFACE_LINK_LIBRARIES
                       "${HARFBUZZ_GOBJECT_LIB_LIBRARIES}")
-set_target_properties(HARFBUZZ_GOBJECT PROPERTIES INTERFACE_COMPILE_OPTIONS
+set_target_properties(harfbuzz_gobject::harfbuzz_gobject PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${HARFBUZZ_GOBJECT_CFLAGS_OTHER}")

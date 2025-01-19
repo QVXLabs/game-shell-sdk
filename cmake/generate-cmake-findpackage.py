@@ -5,20 +5,19 @@ from string import Template
 
 # Template for Find<Package>.cmake file
 FIND_PACKAGE_TEMPLATE = """
-set(ENV{{PKG_CONFIG_PATH}} "{pkgconf_path}")
 find_package(PkgConfig REQUIRED)
 
-pkg_check_modules({cmake_pkg_name} REQUIRED {pkg_name})
+pkg_check_modules({cmake_pkg_prefix} REQUIRED {pkg_name})
 
-add_library({cmake_pkg_name} INTERFACE IMPORTED)
-set_target_properties({cmake_pkg_name} PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
-                      "${{{cmake_pkg_name}_INCLUDE_DIRS}}")
-set_target_properties({cmake_pkg_name} PROPERTIES INTERFACE_LINK_DIRECTORIES
-                      "${{{cmake_pkg_name}_LIBRARY_DIRS}}")
-set_target_properties({cmake_pkg_name} PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${{{cmake_pkg_name}_LIB_LIBRARIES}}")
-set_target_properties({cmake_pkg_name} PROPERTIES INTERFACE_COMPILE_OPTIONS
-                      "${{{cmake_pkg_name}_CFLAGS_OTHER}}")
+add_library({cmake_target_name} INTERFACE IMPORTED)
+set_target_properties({cmake_target_name} PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
+                      "${{{cmake_pkg_prefix}_INCLUDE_DIRS}}")
+set_target_properties({cmake_target_name} PROPERTIES INTERFACE_LINK_DIRECTORIES
+                      "${{{cmake_pkg_prefix}_LIBRARY_DIRS}}")
+set_target_properties({cmake_target_name} PROPERTIES INTERFACE_LINK_LIBRARIES
+                      "${{{cmake_pkg_prefix}_LIB_LIBRARIES}}")
+set_target_properties({cmake_target_name} PROPERTIES INTERFACE_COMPILE_OPTIONS
+                      "${{{cmake_pkg_prefix}_CFLAGS_OTHER}}")
 """
 
 
@@ -40,17 +39,20 @@ def generate_find_package_scripts(pc_paths, output_path):
         for filename in os.listdir(path):
             if filename.endswith(".pc"):
                 # extract package name
-                pkg_name = os.path.splitext(filename)[0]  # Remove .pc extension
-                cmake_pkg_name = re.sub('-', '_', pkg_name.upper())
+                # Remove .pc extension
+                pkg_name = os.path.splitext(filename)[0]
+                cmake_pkg_name = re.sub('-', '_', pkg_name)
+                cmake_pkg_prefix = re.sub('-', '_', pkg_name.upper())
+                cmake_target_name = cmake_pkg_name + "::" + cmake_pkg_name
                 # cmake module file name
-                cmake_filename = os.path.join(output_path, f"Find{pkg_name}.cmake")
+                cmake_filename = os.path.join(output_path,
+                                              f"Find{pkg_name}.cmake")
                 # generate cmake file
-                print(pkg_name, cmake_pkg_name)
                 with open(cmake_filename, "w") as cmake_file:
                     cmake_file.write(FIND_PACKAGE_TEMPLATE.format(
-                        cmake_pkg_name=cmake_pkg_name,
                         pkg_name=pkg_name,
-                        pkgconf_path=os.path.abspath(path)
+                        cmake_pkg_prefix=cmake_pkg_prefix,
+                        cmake_target_name=cmake_target_name
                     ))
                 print(f"Generated file: {cmake_filename}")
 

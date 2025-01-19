@@ -1,15 +1,14 @@
 
-set(ENV{PKG_CONFIG_PATH} "/Users/afalls/code/game-shell-sdk/pkgconf/ClockworkOS/0.5")
 find_package(PkgConfig REQUIRED)
 
 pkg_check_modules(LIBDRM_NOUVEAU REQUIRED libdrm_nouveau)
 
-add_library(LIBDRM_NOUVEAU INTERFACE IMPORTED)
-set_target_properties(LIBDRM_NOUVEAU PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
+add_library(libdrm_nouveau::libdrm_nouveau INTERFACE IMPORTED)
+set_target_properties(libdrm_nouveau::libdrm_nouveau PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
                       "${LIBDRM_NOUVEAU_INCLUDE_DIRS}")
-set_target_properties(LIBDRM_NOUVEAU PROPERTIES INTERFACE_LINK_DIRECTORIES
+set_target_properties(libdrm_nouveau::libdrm_nouveau PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBDRM_NOUVEAU_LIBRARY_DIRS}")
-set_target_properties(LIBDRM_NOUVEAU PROPERTIES INTERFACE_LINK_LIBRARIES
+set_target_properties(libdrm_nouveau::libdrm_nouveau PROPERTIES INTERFACE_LINK_LIBRARIES
                       "${LIBDRM_NOUVEAU_LIB_LIBRARIES}")
-set_target_properties(LIBDRM_NOUVEAU PROPERTIES INTERFACE_COMPILE_OPTIONS
+set_target_properties(libdrm_nouveau::libdrm_nouveau PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBDRM_NOUVEAU_CFLAGS_OTHER}")
