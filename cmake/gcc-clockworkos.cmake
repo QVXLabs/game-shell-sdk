@@ -22,5 +22,8 @@ set(CMAKE_C_FLAGS "${DEFAULT_FLAGS}")
 set(CMAKE_CPP_FLAGS "${DEFAULT_FLAGS}")
 
 # search path for packages
-set(ENV{PKG_CONFIG_PATH} "${GAMESHELL_SDK_ROOT}/pkgconf")
-list(PREPEND CMAKE_MODULE_PATH "${GAMESHELL_SDK_ROOT}/cmake/modules")
+set(ENV{PKG_CONFIG_PATH}
+  "${GAMESHELL_SDK_ROOT}/pkgconf/ClockworkOS/0.5")
+list(PREPEND
+  CMAKE_MODULE_PATH
+  "${GAMESHELL_SDK_ROOT}/cmake/modules/ClockworkOS/0.5")

@@ -1,15 +1,14 @@
 
-set(ENV{PKG_CONFIG_PATH} "/Users/afalls/code/game-shell-sdk/pkgconf/ClockworkOS/0.5")
 find_package(PkgConfig REQUIRED)
 
 pkg_check_modules(XF86BIGFONTPROTO REQUIRED xf86bigfontproto)
 
-add_library(XF86BIGFONTPROTO INTERFACE IMPORTED)
-set_target_properties(XF86BIGFONTPROTO PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
+add_library(xf86bigfontproto::xf86bigfontproto INTERFACE IMPORTED)
+set_target_properties(xf86bigfontproto::xf86bigfontproto PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
                       "${XF86BIGFONTPROTO_INCLUDE_DIRS}")
-set_target_properties(XF86BIGFONTPROTO PROPERTIES INTERFACE_LINK_DIRECTORIES
+set_target_properties(xf86bigfontproto::xf86bigfontproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XF86BIGFONTPROTO_LIBRARY_DIRS}")
-set_target_properties(XF86BIGFONTPROTO PROPERTIES INTERFACE_LINK_LIBRARIES
+set_target_properties(xf86bigfontproto::xf86bigfontproto PROPERTIES INTERFACE_LINK_LIBRARIES
                       "${XF86BIGFONTPROTO_LIB_LIBRARIES}")
-set_target_properties(XF86BIGFONTPROTO PROPERTIES INTERFACE_COMPILE_OPTIONS
+set_target_properties(xf86bigfontproto::xf86bigfontproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XF86BIGFONTPROTO_CFLAGS_OTHER}")
