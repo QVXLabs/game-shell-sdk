@@ -1,15 +1,14 @@
 
-set(ENV{PKG_CONFIG_PATH} "/Users/afalls/code/game-shell-sdk/pkgconf/ClockworkOS/0.5")
 find_package(PkgConfig REQUIRED)
 
 pkg_check_modules(ICE REQUIRED ice)
 
-add_library(ICE INTERFACE IMPORTED)
-set_target_properties(ICE PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
+add_library(ice::ice INTERFACE IMPORTED)
+set_target_properties(ice::ice PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
                       "${ICE_INCLUDE_DIRS}")
-set_target_properties(ICE PROPERTIES INTERFACE_LINK_DIRECTORIES
+set_target_properties(ice::ice PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${ICE_LIBRARY_DIRS}")
-set_target_properties(ICE PROPERTIES INTERFACE_LINK_LIBRARIES
+set_target_properties(ice::ice PROPERTIES INTERFACE_LINK_LIBRARIES
                       "${ICE_LIB_LIBRARIES}")
-set_target_properties(ICE PROPERTIES INTERFACE_COMPILE_OPTIONS
+set_target_properties(ice::ice PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${ICE_CFLAGS_OTHER}")
