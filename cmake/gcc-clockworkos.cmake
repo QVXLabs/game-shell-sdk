@@ -27,3 +27,7 @@ set(ENV{PKG_CONFIG_PATH}
 list(PREPEND
   CMAKE_MODULE_PATH
   "${GAMESHELL_SDK_ROOT}/cmake/modules/ClockworkOS/0.5")
+
+# update rpath for lima drivers
+set(CMAKE_BUILD_RPATH "/usr/lib/lima")
+

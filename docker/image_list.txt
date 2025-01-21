@@ -1,0 +1,1 @@
+ClockworkOS/0.5,http://dl.clockworkpi.com/clockworkos_v0.5.img.bz2,eff2c95c7ebff9e4024dff1092e64363
