@@ -21,7 +21,9 @@ endif()
 set(CMAKE_C_FLAGS "${DEFAULT_FLAGS}")
 set(CMAKE_CPP_FLAGS "${DEFAULT_FLAGS}")
 
-# search path for packages
+# search path for packages & sysroot
+set(ENV{PKG_CONFIG_SYSROOT_DIR}
+  "${GAMESHELL_SDK_ROOT}/sysroot/ClockworkOS/0.5")
 set(ENV{PKG_CONFIG_PATH}
   "${GAMESHELL_SDK_ROOT}/pkgconf/ClockworkOS/0.5")
 list(PREPEND
