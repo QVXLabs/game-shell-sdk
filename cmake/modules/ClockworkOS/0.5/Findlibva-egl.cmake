@@ -9,6 +9,6 @@ set_target_properties(libva_egl::libva_egl PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(libva_egl::libva_egl PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBVA_EGL_LIBRARY_DIRS}")
 set_target_properties(libva_egl::libva_egl PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBVA_EGL_LIB_LIBRARIES}")
+                      "${LIBVA_EGL_LIBRARIES}")
 set_target_properties(libva_egl::libva_egl PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBVA_EGL_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(glfw3::glfw3 PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(glfw3::glfw3 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GLFW3_LIBRARY_DIRS}")
 set_target_properties(glfw3::glfw3 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GLFW3_LIB_LIBRARIES}")
+                      "${GLFW3_LIBRARIES}")
 set_target_properties(glfw3::glfw3 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GLFW3_CFLAGS_OTHER}")

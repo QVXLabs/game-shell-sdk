@@ -9,6 +9,6 @@ set_target_properties(fontutil::fontutil PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(fontutil::fontutil PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${FONTUTIL_LIBRARY_DIRS}")
 set_target_properties(fontutil::fontutil PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${FONTUTIL_LIB_LIBRARIES}")
+                      "${FONTUTIL_LIBRARIES}")
 set_target_properties(fontutil::fontutil PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${FONTUTIL_CFLAGS_OTHER}")

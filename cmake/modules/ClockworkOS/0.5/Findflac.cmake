@@ -9,6 +9,6 @@ set_target_properties(flac::flac PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(flac::flac PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${FLAC_LIBRARY_DIRS}")
 set_target_properties(flac::flac PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${FLAC_LIB_LIBRARIES}")
+                      "${FLAC_LIBRARIES}")
 set_target_properties(flac::flac PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${FLAC_CFLAGS_OTHER}")

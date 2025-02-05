@@ -9,6 +9,6 @@ set_target_properties(xf86bigfontproto::xf86bigfontproto PROPERTIES INTERFACE_IN
 set_target_properties(xf86bigfontproto::xf86bigfontproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XF86BIGFONTPROTO_LIBRARY_DIRS}")
 set_target_properties(xf86bigfontproto::xf86bigfontproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XF86BIGFONTPROTO_LIB_LIBRARIES}")
+                      "${XF86BIGFONTPROTO_LIBRARIES}")
 set_target_properties(xf86bigfontproto::xf86bigfontproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XF86BIGFONTPROTO_CFLAGS_OTHER}")

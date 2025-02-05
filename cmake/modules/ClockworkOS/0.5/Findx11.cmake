@@ -9,6 +9,6 @@ set_target_properties(x11::x11 PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(x11::x11 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${X11_LIBRARY_DIRS}")
 set_target_properties(x11::x11 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${X11_LIB_LIBRARIES}")
+                      "${X11_LIBRARIES}")
 set_target_properties(x11::x11 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${X11_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(blas::blas PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(blas::blas PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${BLAS_LIBRARY_DIRS}")
 set_target_properties(blas::blas PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${BLAS_LIB_LIBRARIES}")
+                      "${BLAS_LIBRARIES}")
 set_target_properties(blas::blas PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${BLAS_CFLAGS_OTHER}")

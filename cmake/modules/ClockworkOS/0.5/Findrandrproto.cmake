@@ -9,6 +9,6 @@ set_target_properties(randrproto::randrproto PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(randrproto::randrproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${RANDRPROTO_LIBRARY_DIRS}")
 set_target_properties(randrproto::randrproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${RANDRPROTO_LIB_LIBRARIES}")
+                      "${RANDRPROTO_LIBRARIES}")
 set_target_properties(randrproto::randrproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${RANDRPROTO_CFLAGS_OTHER}")

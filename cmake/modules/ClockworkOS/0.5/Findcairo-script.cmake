@@ -9,6 +9,6 @@ set_target_properties(cairo_script::cairo_script PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(cairo_script::cairo_script PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CAIRO_SCRIPT_LIBRARY_DIRS}")
 set_target_properties(cairo_script::cairo_script PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CAIRO_SCRIPT_LIB_LIBRARIES}")
+                      "${CAIRO_SCRIPT_LIBRARIES}")
 set_target_properties(cairo_script::cairo_script PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CAIRO_SCRIPT_CFLAGS_OTHER}")

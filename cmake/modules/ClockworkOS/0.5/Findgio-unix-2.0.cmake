@@ -9,6 +9,6 @@ set_target_properties(gio_unix_2.0::gio_unix_2.0 PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(gio_unix_2.0::gio_unix_2.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GIO_UNIX_2.0_LIBRARY_DIRS}")
 set_target_properties(gio_unix_2.0::gio_unix_2.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GIO_UNIX_2.0_LIB_LIBRARIES}")
+                      "${GIO_UNIX_2.0_LIBRARIES}")
 set_target_properties(gio_unix_2.0::gio_unix_2.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GIO_UNIX_2.0_CFLAGS_OTHER}")

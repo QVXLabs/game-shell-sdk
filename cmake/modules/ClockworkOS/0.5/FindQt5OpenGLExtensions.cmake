@@ -9,6 +9,6 @@ set_target_properties(Qt5OpenGLExtensions::Qt5OpenGLExtensions PROPERTIES INTERF
 set_target_properties(Qt5OpenGLExtensions::Qt5OpenGLExtensions PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${QT5OPENGLEXTENSIONS_LIBRARY_DIRS}")
 set_target_properties(Qt5OpenGLExtensions::Qt5OpenGLExtensions PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${QT5OPENGLEXTENSIONS_LIB_LIBRARIES}")
+                      "${QT5OPENGLEXTENSIONS_LIBRARIES}")
 set_target_properties(Qt5OpenGLExtensions::Qt5OpenGLExtensions PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${QT5OPENGLEXTENSIONS_CFLAGS_OTHER}")

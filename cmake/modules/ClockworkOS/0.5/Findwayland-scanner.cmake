@@ -9,6 +9,6 @@ set_target_properties(wayland_scanner::wayland_scanner PROPERTIES INTERFACE_INCL
 set_target_properties(wayland_scanner::wayland_scanner PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${WAYLAND_SCANNER_LIBRARY_DIRS}")
 set_target_properties(wayland_scanner::wayland_scanner PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${WAYLAND_SCANNER_LIB_LIBRARIES}")
+                      "${WAYLAND_SCANNER_LIBRARIES}")
 set_target_properties(wayland_scanner::wayland_scanner PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${WAYLAND_SCANNER_CFLAGS_OTHER}")

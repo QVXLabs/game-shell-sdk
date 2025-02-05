@@ -9,6 +9,6 @@ set_target_properties(python3::python3 PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(python3::python3 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PYTHON3_LIBRARY_DIRS}")
 set_target_properties(python3::python3 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PYTHON3_LIB_LIBRARIES}")
+                      "${PYTHON3_LIBRARIES}")
 set_target_properties(python3::python3 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PYTHON3_CFLAGS_OTHER}")

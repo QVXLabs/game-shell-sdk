@@ -9,6 +9,6 @@ set_target_properties(xcb::xcb PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xcb::xcb PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XCB_LIBRARY_DIRS}")
 set_target_properties(xcb::xcb PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XCB_LIB_LIBRARIES}")
+                      "${XCB_LIBRARIES}")
 set_target_properties(xcb::xcb PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XCB_CFLAGS_OTHER}")

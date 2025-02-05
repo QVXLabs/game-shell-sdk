@@ -9,6 +9,6 @@ set_target_properties(cairo_gobject::cairo_gobject PROPERTIES INTERFACE_INCLUDE_
 set_target_properties(cairo_gobject::cairo_gobject PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CAIRO_GOBJECT_LIBRARY_DIRS}")
 set_target_properties(cairo_gobject::cairo_gobject PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CAIRO_GOBJECT_LIB_LIBRARIES}")
+                      "${CAIRO_GOBJECT_LIBRARIES}")
 set_target_properties(cairo_gobject::cairo_gobject PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CAIRO_GOBJECT_CFLAGS_OTHER}")

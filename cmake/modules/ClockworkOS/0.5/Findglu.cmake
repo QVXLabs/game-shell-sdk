@@ -9,6 +9,6 @@ set_target_properties(glu::glu PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(glu::glu PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GLU_LIBRARY_DIRS}")
 set_target_properties(glu::glu PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GLU_LIB_LIBRARIES}")
+                      "${GLU_LIBRARIES}")
 set_target_properties(glu::glu PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GLU_CFLAGS_OTHER}")

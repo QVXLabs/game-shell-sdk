@@ -9,6 +9,6 @@ set_target_properties(xrandr::xrandr PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xrandr::xrandr PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XRANDR_LIBRARY_DIRS}")
 set_target_properties(xrandr::xrandr PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XRANDR_LIB_LIBRARIES}")
+                      "${XRANDR_LIBRARIES}")
 set_target_properties(xrandr::xrandr PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XRANDR_CFLAGS_OTHER}")

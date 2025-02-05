@@ -9,6 +9,6 @@ set_target_properties(slang::slang PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(slang::slang PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${SLANG_LIBRARY_DIRS}")
 set_target_properties(slang::slang PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${SLANG_LIB_LIBRARIES}")
+                      "${SLANG_LIBRARIES}")
 set_target_properties(slang::slang PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${SLANG_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(xtrans::xtrans PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xtrans::xtrans PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XTRANS_LIBRARY_DIRS}")
 set_target_properties(xtrans::xtrans PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XTRANS_LIB_LIBRARIES}")
+                      "${XTRANS_LIBRARIES}")
 set_target_properties(xtrans::xtrans PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XTRANS_CFLAGS_OTHER}")

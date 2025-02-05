@@ -9,6 +9,6 @@ set_target_properties(wayland_cursor::wayland_cursor PROPERTIES INTERFACE_INCLUD
 set_target_properties(wayland_cursor::wayland_cursor PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${WAYLAND_CURSOR_LIBRARY_DIRS}")
 set_target_properties(wayland_cursor::wayland_cursor PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${WAYLAND_CURSOR_LIB_LIBRARIES}")
+                      "${WAYLAND_CURSOR_LIBRARIES}")
 set_target_properties(wayland_cursor::wayland_cursor PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${WAYLAND_CURSOR_CFLAGS_OTHER}")

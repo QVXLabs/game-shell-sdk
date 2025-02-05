@@ -9,6 +9,6 @@ set_target_properties(pixman_1::pixman_1 PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(pixman_1::pixman_1 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PIXMAN_1_LIBRARY_DIRS}")
 set_target_properties(pixman_1::pixman_1 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PIXMAN_1_LIB_LIBRARIES}")
+                      "${PIXMAN_1_LIBRARIES}")
 set_target_properties(pixman_1::pixman_1 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PIXMAN_1_CFLAGS_OTHER}")

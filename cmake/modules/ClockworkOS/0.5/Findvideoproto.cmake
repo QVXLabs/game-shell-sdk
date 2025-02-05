@@ -9,6 +9,6 @@ set_target_properties(videoproto::videoproto PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(videoproto::videoproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${VIDEOPROTO_LIBRARY_DIRS}")
 set_target_properties(videoproto::videoproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${VIDEOPROTO_LIB_LIBRARIES}")
+                      "${VIDEOPROTO_LIBRARIES}")
 set_target_properties(videoproto::videoproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${VIDEOPROTO_CFLAGS_OTHER}")

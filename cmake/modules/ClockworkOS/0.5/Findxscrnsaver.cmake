@@ -9,6 +9,6 @@ set_target_properties(xscrnsaver::xscrnsaver PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(xscrnsaver::xscrnsaver PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XSCRNSAVER_LIBRARY_DIRS}")
 set_target_properties(xscrnsaver::xscrnsaver PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XSCRNSAVER_LIB_LIBRARIES}")
+                      "${XSCRNSAVER_LIBRARIES}")
 set_target_properties(xscrnsaver::xscrnsaver PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XSCRNSAVER_CFLAGS_OTHER}")

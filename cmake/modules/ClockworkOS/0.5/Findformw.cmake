@@ -9,6 +9,6 @@ set_target_properties(formw::formw PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(formw::formw PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${FORMW_LIBRARY_DIRS}")
 set_target_properties(formw::formw PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${FORMW_LIB_LIBRARIES}")
+                      "${FORMW_LIBRARIES}")
 set_target_properties(formw::formw PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${FORMW_CFLAGS_OTHER}")

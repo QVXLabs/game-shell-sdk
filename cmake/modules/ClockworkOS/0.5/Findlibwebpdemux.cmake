@@ -9,6 +9,6 @@ set_target_properties(libwebpdemux::libwebpdemux PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(libwebpdemux::libwebpdemux PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBWEBPDEMUX_LIBRARY_DIRS}")
 set_target_properties(libwebpdemux::libwebpdemux PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBWEBPDEMUX_LIB_LIBRARIES}")
+                      "${LIBWEBPDEMUX_LIBRARIES}")
 set_target_properties(libwebpdemux::libwebpdemux PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBWEBPDEMUX_CFLAGS_OTHER}")

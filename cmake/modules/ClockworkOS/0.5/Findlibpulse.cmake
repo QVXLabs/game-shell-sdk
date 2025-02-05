@@ -9,6 +9,6 @@ set_target_properties(libpulse::libpulse PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(libpulse::libpulse PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBPULSE_LIBRARY_DIRS}")
 set_target_properties(libpulse::libpulse PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBPULSE_LIB_LIBRARIES}")
+                      "${LIBPULSE_LIBRARIES}")
 set_target_properties(libpulse::libpulse PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBPULSE_CFLAGS_OTHER}")

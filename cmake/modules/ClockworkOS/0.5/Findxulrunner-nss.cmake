@@ -9,6 +9,6 @@ set_target_properties(xulrunner_nss::xulrunner_nss PROPERTIES INTERFACE_INCLUDE_
 set_target_properties(xulrunner_nss::xulrunner_nss PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XULRUNNER_NSS_LIBRARY_DIRS}")
 set_target_properties(xulrunner_nss::xulrunner_nss PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XULRUNNER_NSS_LIB_LIBRARIES}")
+                      "${XULRUNNER_NSS_LIBRARIES}")
 set_target_properties(xulrunner_nss::xulrunner_nss PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XULRUNNER_NSS_CFLAGS_OTHER}")

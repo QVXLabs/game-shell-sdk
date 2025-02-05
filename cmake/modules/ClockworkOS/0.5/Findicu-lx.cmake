@@ -9,6 +9,6 @@ set_target_properties(icu_lx::icu_lx PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(icu_lx::icu_lx PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${ICU_LX_LIBRARY_DIRS}")
 set_target_properties(icu_lx::icu_lx PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${ICU_LX_LIB_LIBRARIES}")
+                      "${ICU_LX_LIBRARIES}")
 set_target_properties(icu_lx::icu_lx PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${ICU_LX_CFLAGS_OTHER}")

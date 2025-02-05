@@ -9,6 +9,6 @@ set_target_properties(wayland_egl::wayland_egl PROPERTIES INTERFACE_INCLUDE_DIRE
 set_target_properties(wayland_egl::wayland_egl PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${WAYLAND_EGL_LIBRARY_DIRS}")
 set_target_properties(wayland_egl::wayland_egl PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${WAYLAND_EGL_LIB_LIBRARIES}")
+                      "${WAYLAND_EGL_LIBRARIES}")
 set_target_properties(wayland_egl::wayland_egl PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${WAYLAND_EGL_CFLAGS_OTHER}")

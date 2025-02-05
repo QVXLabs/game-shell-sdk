@@ -9,6 +9,6 @@ set_target_properties(fontenc::fontenc PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(fontenc::fontenc PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${FONTENC_LIBRARY_DIRS}")
 set_target_properties(fontenc::fontenc PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${FONTENC_LIB_LIBRARIES}")
+                      "${FONTENC_LIBRARIES}")
 set_target_properties(fontenc::fontenc PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${FONTENC_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(libudev::libudev PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(libudev::libudev PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBUDEV_LIBRARY_DIRS}")
 set_target_properties(libudev::libudev PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBUDEV_LIB_LIBRARIES}")
+                      "${LIBUDEV_LIBRARIES}")
 set_target_properties(libudev::libudev PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBUDEV_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(sdl::sdl PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(sdl::sdl PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${SDL_LIBRARY_DIRS}")
 set_target_properties(sdl::sdl PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${SDL_LIB_LIBRARIES}")
+                      "${SDL_LIBRARIES}")
 set_target_properties(sdl::sdl PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${SDL_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(Qt5Concurrent::Qt5Concurrent PROPERTIES INTERFACE_INCLUDE_
 set_target_properties(Qt5Concurrent::Qt5Concurrent PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${QT5CONCURRENT_LIBRARY_DIRS}")
 set_target_properties(Qt5Concurrent::Qt5Concurrent PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${QT5CONCURRENT_LIB_LIBRARIES}")
+                      "${QT5CONCURRENT_LIBRARIES}")
 set_target_properties(Qt5Concurrent::Qt5Concurrent PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${QT5CONCURRENT_CFLAGS_OTHER}")

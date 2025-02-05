@@ -9,6 +9,6 @@ set_target_properties(vorbis::vorbis PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(vorbis::vorbis PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${VORBIS_LIBRARY_DIRS}")
 set_target_properties(vorbis::vorbis PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${VORBIS_LIB_LIBRARIES}")
+                      "${VORBIS_LIBRARIES}")
 set_target_properties(vorbis::vorbis PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${VORBIS_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(xrender::xrender PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xrender::xrender PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XRENDER_LIBRARY_DIRS}")
 set_target_properties(xrender::xrender PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XRENDER_LIB_LIBRARIES}")
+                      "${XRENDER_LIBRARIES}")
 set_target_properties(xrender::xrender PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XRENDER_CFLAGS_OTHER}")

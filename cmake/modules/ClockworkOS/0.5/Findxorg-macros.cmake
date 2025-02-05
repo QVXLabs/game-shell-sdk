@@ -9,6 +9,6 @@ set_target_properties(xorg_macros::xorg_macros PROPERTIES INTERFACE_INCLUDE_DIRE
 set_target_properties(xorg_macros::xorg_macros PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XORG_MACROS_LIBRARY_DIRS}")
 set_target_properties(xorg_macros::xorg_macros PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XORG_MACROS_LIB_LIBRARIES}")
+                      "${XORG_MACROS_LIBRARIES}")
 set_target_properties(xorg_macros::xorg_macros PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XORG_MACROS_CFLAGS_OTHER}")

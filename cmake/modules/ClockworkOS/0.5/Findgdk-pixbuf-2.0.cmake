@@ -9,6 +9,6 @@ set_target_properties(gdk_pixbuf_2.0::gdk_pixbuf_2.0 PROPERTIES INTERFACE_INCLUD
 set_target_properties(gdk_pixbuf_2.0::gdk_pixbuf_2.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GDK_PIXBUF_2.0_LIBRARY_DIRS}")
 set_target_properties(gdk_pixbuf_2.0::gdk_pixbuf_2.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GDK_PIXBUF_2.0_LIB_LIBRARIES}")
+                      "${GDK_PIXBUF_2.0_LIBRARIES}")
 set_target_properties(gdk_pixbuf_2.0::gdk_pixbuf_2.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GDK_PIXBUF_2.0_CFLAGS_OTHER}")

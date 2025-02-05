@@ -9,6 +9,6 @@ set_target_properties(bash_completion::bash_completion PROPERTIES INTERFACE_INCL
 set_target_properties(bash_completion::bash_completion PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${BASH_COMPLETION_LIBRARY_DIRS}")
 set_target_properties(bash_completion::bash_completion PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${BASH_COMPLETION_LIB_LIBRARIES}")
+                      "${BASH_COMPLETION_LIBRARIES}")
 set_target_properties(bash_completion::bash_completion PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${BASH_COMPLETION_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(jack::jack PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(jack::jack PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${JACK_LIBRARY_DIRS}")
 set_target_properties(jack::jack PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${JACK_LIB_LIBRARIES}")
+                      "${JACK_LIBRARIES}")
 set_target_properties(jack::jack PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${JACK_CFLAGS_OTHER}")

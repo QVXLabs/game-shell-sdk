@@ -9,6 +9,6 @@ set_target_properties(harfbuzz_gobject::harfbuzz_gobject PROPERTIES INTERFACE_IN
 set_target_properties(harfbuzz_gobject::harfbuzz_gobject PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${HARFBUZZ_GOBJECT_LIBRARY_DIRS}")
 set_target_properties(harfbuzz_gobject::harfbuzz_gobject PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${HARFBUZZ_GOBJECT_LIB_LIBRARIES}")
+                      "${HARFBUZZ_GOBJECT_LIBRARIES}")
 set_target_properties(harfbuzz_gobject::harfbuzz_gobject PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${HARFBUZZ_GOBJECT_CFLAGS_OTHER}")

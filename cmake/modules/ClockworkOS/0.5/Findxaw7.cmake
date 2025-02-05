@@ -9,6 +9,6 @@ set_target_properties(xaw7::xaw7 PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xaw7::xaw7 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XAW7_LIBRARY_DIRS}")
 set_target_properties(xaw7::xaw7 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XAW7_LIB_LIBRARIES}")
+                      "${XAW7_LIBRARIES}")
 set_target_properties(xaw7::xaw7 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XAW7_CFLAGS_OTHER}")

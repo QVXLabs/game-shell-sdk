@@ -9,6 +9,6 @@ set_target_properties(SDL_gfx::SDL_gfx PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(SDL_gfx::SDL_gfx PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${SDL_GFX_LIBRARY_DIRS}")
 set_target_properties(SDL_gfx::SDL_gfx PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${SDL_GFX_LIB_LIBRARIES}")
+                      "${SDL_GFX_LIBRARIES}")
 set_target_properties(SDL_gfx::SDL_gfx PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${SDL_GFX_CFLAGS_OTHER}")

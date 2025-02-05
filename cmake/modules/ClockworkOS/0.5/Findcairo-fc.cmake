@@ -9,6 +9,6 @@ set_target_properties(cairo_fc::cairo_fc PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(cairo_fc::cairo_fc PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CAIRO_FC_LIBRARY_DIRS}")
 set_target_properties(cairo_fc::cairo_fc PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CAIRO_FC_LIB_LIBRARIES}")
+                      "${CAIRO_FC_LIBRARIES}")
 set_target_properties(cairo_fc::cairo_fc PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CAIRO_FC_CFLAGS_OTHER}")

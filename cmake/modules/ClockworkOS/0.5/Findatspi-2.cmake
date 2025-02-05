@@ -9,6 +9,6 @@ set_target_properties(atspi_2::atspi_2 PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(atspi_2::atspi_2 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${ATSPI_2_LIBRARY_DIRS}")
 set_target_properties(atspi_2::atspi_2 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${ATSPI_2_LIB_LIBRARIES}")
+                      "${ATSPI_2_LIBRARIES}")
 set_target_properties(atspi_2::atspi_2 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${ATSPI_2_CFLAGS_OTHER}")

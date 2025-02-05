@@ -9,6 +9,6 @@ set_target_properties(caca++::caca++ PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(caca++::caca++ PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CACA++_LIBRARY_DIRS}")
 set_target_properties(caca++::caca++ PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CACA++_LIB_LIBRARIES}")
+                      "${CACA++_LIBRARIES}")
 set_target_properties(caca++::caca++ PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CACA++_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(libpcreposix::libpcreposix PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(libpcreposix::libpcreposix PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBPCREPOSIX_LIBRARY_DIRS}")
 set_target_properties(libpcreposix::libpcreposix PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBPCREPOSIX_LIB_LIBRARIES}")
+                      "${LIBPCREPOSIX_LIBRARIES}")
 set_target_properties(libpcreposix::libpcreposix PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBPCREPOSIX_CFLAGS_OTHER}")

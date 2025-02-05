@@ -9,6 +9,6 @@ set_target_properties(xorg_wacom::xorg_wacom PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(xorg_wacom::xorg_wacom PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XORG_WACOM_LIBRARY_DIRS}")
 set_target_properties(xorg_wacom::xorg_wacom PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XORG_WACOM_LIB_LIBRARIES}")
+                      "${XORG_WACOM_LIBRARIES}")
 set_target_properties(xorg_wacom::xorg_wacom PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XORG_WACOM_CFLAGS_OTHER}")

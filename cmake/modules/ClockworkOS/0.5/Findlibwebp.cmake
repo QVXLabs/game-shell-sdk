@@ -9,6 +9,6 @@ set_target_properties(libwebp::libwebp PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(libwebp::libwebp PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBWEBP_LIBRARY_DIRS}")
 set_target_properties(libwebp::libwebp PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBWEBP_LIB_LIBRARIES}")
+                      "${LIBWEBP_LIBRARIES}")
 set_target_properties(libwebp::libwebp PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBWEBP_CFLAGS_OTHER}")

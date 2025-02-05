@@ -9,6 +9,6 @@ set_target_properties(libpng16::libpng16 PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(libpng16::libpng16 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBPNG16_LIBRARY_DIRS}")
 set_target_properties(libpng16::libpng16 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBPNG16_LIB_LIBRARIES}")
+                      "${LIBPNG16_LIBRARIES}")
 set_target_properties(libpng16::libpng16 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBPNG16_CFLAGS_OTHER}")

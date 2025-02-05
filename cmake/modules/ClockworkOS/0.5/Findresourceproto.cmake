@@ -9,6 +9,6 @@ set_target_properties(resourceproto::resourceproto PROPERTIES INTERFACE_INCLUDE_
 set_target_properties(resourceproto::resourceproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${RESOURCEPROTO_LIBRARY_DIRS}")
 set_target_properties(resourceproto::resourceproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${RESOURCEPROTO_LIB_LIBRARIES}")
+                      "${RESOURCEPROTO_LIBRARIES}")
 set_target_properties(resourceproto::resourceproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${RESOURCEPROTO_CFLAGS_OTHER}")

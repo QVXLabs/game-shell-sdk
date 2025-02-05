@@ -9,6 +9,6 @@ set_target_properties(form::form PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(form::form PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${FORM_LIBRARY_DIRS}")
 set_target_properties(form::form PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${FORM_LIB_LIBRARIES}")
+                      "${FORM_LIBRARIES}")
 set_target_properties(form::form PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${FORM_CFLAGS_OTHER}")

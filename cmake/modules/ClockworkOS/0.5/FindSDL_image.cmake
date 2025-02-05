@@ -9,6 +9,6 @@ set_target_properties(SDL_image::SDL_image PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(SDL_image::SDL_image PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${SDL_IMAGE_LIBRARY_DIRS}")
 set_target_properties(SDL_image::SDL_image PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${SDL_IMAGE_LIB_LIBRARIES}")
+                      "${SDL_IMAGE_LIBRARIES}")
 set_target_properties(SDL_image::SDL_image PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${SDL_IMAGE_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(sdl2::sdl2 PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(sdl2::sdl2 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${SDL2_LIBRARY_DIRS}")
 set_target_properties(sdl2::sdl2 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${SDL2_LIB_LIBRARIES}")
+                      "${SDL2_LIBRARIES}")
 set_target_properties(sdl2::sdl2 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${SDL2_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(xcursor::xcursor PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xcursor::xcursor PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XCURSOR_LIBRARY_DIRS}")
 set_target_properties(xcursor::xcursor PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XCURSOR_LIB_LIBRARIES}")
+                      "${XCURSOR_LIBRARIES}")
 set_target_properties(xcursor::xcursor PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XCURSOR_CFLAGS_OTHER}")

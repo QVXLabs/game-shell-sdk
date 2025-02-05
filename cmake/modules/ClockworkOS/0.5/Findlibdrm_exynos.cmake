@@ -9,6 +9,6 @@ set_target_properties(libdrm_exynos::libdrm_exynos PROPERTIES INTERFACE_INCLUDE_
 set_target_properties(libdrm_exynos::libdrm_exynos PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBDRM_EXYNOS_LIBRARY_DIRS}")
 set_target_properties(libdrm_exynos::libdrm_exynos PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBDRM_EXYNOS_LIB_LIBRARIES}")
+                      "${LIBDRM_EXYNOS_LIBRARIES}")
 set_target_properties(libdrm_exynos::libdrm_exynos PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBDRM_EXYNOS_CFLAGS_OTHER}")

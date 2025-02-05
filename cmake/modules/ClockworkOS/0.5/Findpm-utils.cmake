@@ -9,6 +9,6 @@ set_target_properties(pm_utils::pm_utils PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(pm_utils::pm_utils PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PM_UTILS_LIBRARY_DIRS}")
 set_target_properties(pm_utils::pm_utils PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PM_UTILS_LIB_LIBRARIES}")
+                      "${PM_UTILS_LIBRARIES}")
 set_target_properties(pm_utils::pm_utils PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PM_UTILS_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(liblzma::liblzma PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(liblzma::liblzma PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBLZMA_LIBRARY_DIRS}")
 set_target_properties(liblzma::liblzma PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBLZMA_LIB_LIBRARIES}")
+                      "${LIBLZMA_LIBRARIES}")
 set_target_properties(liblzma::liblzma PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBLZMA_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(libdrm_tegra::libdrm_tegra PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(libdrm_tegra::libdrm_tegra PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBDRM_TEGRA_LIBRARY_DIRS}")
 set_target_properties(libdrm_tegra::libdrm_tegra PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBDRM_TEGRA_LIB_LIBRARIES}")
+                      "${LIBDRM_TEGRA_LIBRARIES}")
 set_target_properties(libdrm_tegra::libdrm_tegra PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBDRM_TEGRA_CFLAGS_OTHER}")

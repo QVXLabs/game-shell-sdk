@@ -9,6 +9,6 @@ set_target_properties(libffi::libffi PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(libffi::libffi PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBFFI_LIBRARY_DIRS}")
 set_target_properties(libffi::libffi PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBFFI_LIB_LIBRARIES}")
+                      "${LIBFFI_LIBRARIES}")
 set_target_properties(libffi::libffi PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBFFI_CFLAGS_OTHER}")

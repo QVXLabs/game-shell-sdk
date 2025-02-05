@@ -9,6 +9,6 @@ set_target_properties(libva_wayland::libva_wayland PROPERTIES INTERFACE_INCLUDE_
 set_target_properties(libva_wayland::libva_wayland PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBVA_WAYLAND_LIBRARY_DIRS}")
 set_target_properties(libva_wayland::libva_wayland PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBVA_WAYLAND_LIB_LIBRARIES}")
+                      "${LIBVA_WAYLAND_LIBRARIES}")
 set_target_properties(libva_wayland::libva_wayland PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBVA_WAYLAND_CFLAGS_OTHER}")

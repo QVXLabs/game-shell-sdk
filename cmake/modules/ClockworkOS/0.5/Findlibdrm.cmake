@@ -9,6 +9,6 @@ set_target_properties(libdrm::libdrm PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(libdrm::libdrm PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBDRM_LIBRARY_DIRS}")
 set_target_properties(libdrm::libdrm PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBDRM_LIB_LIBRARIES}")
+                      "${LIBDRM_LIBRARIES}")
 set_target_properties(libdrm::libdrm PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBDRM_CFLAGS_OTHER}")

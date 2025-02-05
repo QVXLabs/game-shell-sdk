@@ -9,6 +9,6 @@ set_target_properties(cairo_xcb::cairo_xcb PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(cairo_xcb::cairo_xcb PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CAIRO_XCB_LIBRARY_DIRS}")
 set_target_properties(cairo_xcb::cairo_xcb PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CAIRO_XCB_LIB_LIBRARIES}")
+                      "${CAIRO_XCB_LIBRARIES}")
 set_target_properties(cairo_xcb::cairo_xcb PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CAIRO_XCB_CFLAGS_OTHER}")

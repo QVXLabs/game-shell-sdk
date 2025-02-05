@@ -9,6 +9,6 @@ set_target_properties(xkeyboard_config::xkeyboard_config PROPERTIES INTERFACE_IN
 set_target_properties(xkeyboard_config::xkeyboard_config PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XKEYBOARD_CONFIG_LIBRARY_DIRS}")
 set_target_properties(xkeyboard_config::xkeyboard_config PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XKEYBOARD_CONFIG_LIB_LIBRARIES}")
+                      "${XKEYBOARD_CONFIG_LIBRARIES}")
 set_target_properties(xkeyboard_config::xkeyboard_config PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XKEYBOARD_CONFIG_CFLAGS_OTHER}")

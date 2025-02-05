@@ -9,6 +9,6 @@ set_target_properties(cairo_pdf::cairo_pdf PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(cairo_pdf::cairo_pdf PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CAIRO_PDF_LIBRARY_DIRS}")
 set_target_properties(cairo_pdf::cairo_pdf PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CAIRO_PDF_LIB_LIBRARIES}")
+                      "${CAIRO_PDF_LIBRARIES}")
 set_target_properties(cairo_pdf::cairo_pdf PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CAIRO_PDF_CFLAGS_OTHER}")

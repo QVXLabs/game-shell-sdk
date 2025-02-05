@@ -9,6 +9,6 @@ set_target_properties(gthread_2.0::gthread_2.0 PROPERTIES INTERFACE_INCLUDE_DIRE
 set_target_properties(gthread_2.0::gthread_2.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GTHREAD_2.0_LIBRARY_DIRS}")
 set_target_properties(gthread_2.0::gthread_2.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GTHREAD_2.0_LIB_LIBRARIES}")
+                      "${GTHREAD_2.0_LIBRARIES}")
 set_target_properties(gthread_2.0::gthread_2.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GTHREAD_2.0_CFLAGS_OTHER}")

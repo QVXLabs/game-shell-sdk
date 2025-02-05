@@ -9,6 +9,6 @@ set_target_properties(Qt5Widgets::Qt5Widgets PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(Qt5Widgets::Qt5Widgets PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${QT5WIDGETS_LIBRARY_DIRS}")
 set_target_properties(Qt5Widgets::Qt5Widgets PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${QT5WIDGETS_LIB_LIBRARIES}")
+                      "${QT5WIDGETS_LIBRARIES}")
 set_target_properties(Qt5Widgets::Qt5Widgets PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${QT5WIDGETS_CFLAGS_OTHER}")

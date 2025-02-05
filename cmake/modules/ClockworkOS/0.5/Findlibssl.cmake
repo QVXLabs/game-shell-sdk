@@ -9,6 +9,6 @@ set_target_properties(libssl::libssl PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(libssl::libssl PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBSSL_LIBRARY_DIRS}")
 set_target_properties(libssl::libssl PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBSSL_LIB_LIBRARIES}")
+                      "${LIBSSL_LIBRARIES}")
 set_target_properties(libssl::libssl PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBSSL_CFLAGS_OTHER}")

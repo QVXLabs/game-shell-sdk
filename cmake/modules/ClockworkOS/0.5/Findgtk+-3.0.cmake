@@ -9,6 +9,6 @@ set_target_properties(gtk+_3.0::gtk+_3.0 PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(gtk+_3.0::gtk+_3.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GTK+_3.0_LIBRARY_DIRS}")
 set_target_properties(gtk+_3.0::gtk+_3.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GTK+_3.0_LIB_LIBRARIES}")
+                      "${GTK+_3.0_LIBRARIES}")
 set_target_properties(gtk+_3.0::gtk+_3.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GTK+_3.0_CFLAGS_OTHER}")

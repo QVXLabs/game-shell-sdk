@@ -9,6 +9,6 @@ set_target_properties(libdrm_vc4::libdrm_vc4 PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(libdrm_vc4::libdrm_vc4 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBDRM_VC4_LIBRARY_DIRS}")
 set_target_properties(libdrm_vc4::libdrm_vc4 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBDRM_VC4_LIB_LIBRARIES}")
+                      "${LIBDRM_VC4_LIBRARIES}")
 set_target_properties(libdrm_vc4::libdrm_vc4 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBDRM_VC4_CFLAGS_OTHER}")

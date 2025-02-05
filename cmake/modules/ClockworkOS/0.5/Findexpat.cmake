@@ -9,6 +9,6 @@ set_target_properties(expat::expat PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(expat::expat PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${EXPAT_LIBRARY_DIRS}")
 set_target_properties(expat::expat PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${EXPAT_LIB_LIBRARIES}")
+                      "${EXPAT_LIBRARIES}")
 set_target_properties(expat::expat PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${EXPAT_CFLAGS_OTHER}")

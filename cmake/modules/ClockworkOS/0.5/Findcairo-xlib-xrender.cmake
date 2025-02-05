@@ -9,6 +9,6 @@ set_target_properties(cairo_xlib_xrender::cairo_xlib_xrender PROPERTIES INTERFAC
 set_target_properties(cairo_xlib_xrender::cairo_xlib_xrender PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CAIRO_XLIB_XRENDER_LIBRARY_DIRS}")
 set_target_properties(cairo_xlib_xrender::cairo_xlib_xrender PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CAIRO_XLIB_XRENDER_LIB_LIBRARIES}")
+                      "${CAIRO_XLIB_XRENDER_LIBRARIES}")
 set_target_properties(cairo_xlib_xrender::cairo_xlib_xrender PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CAIRO_XLIB_XRENDER_CFLAGS_OTHER}")

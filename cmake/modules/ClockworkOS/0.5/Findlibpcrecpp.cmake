@@ -9,6 +9,6 @@ set_target_properties(libpcrecpp::libpcrecpp PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(libpcrecpp::libpcrecpp PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBPCRECPP_LIBRARY_DIRS}")
 set_target_properties(libpcrecpp::libpcrecpp PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBPCRECPP_LIB_LIBRARIES}")
+                      "${LIBPCRECPP_LIBRARIES}")
 set_target_properties(libpcrecpp::libpcrecpp PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBPCRECPP_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(libva_tpi::libva_tpi PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(libva_tpi::libva_tpi PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBVA_TPI_LIBRARY_DIRS}")
 set_target_properties(libva_tpi::libva_tpi PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBVA_TPI_LIB_LIBRARIES}")
+                      "${LIBVA_TPI_LIBRARIES}")
 set_target_properties(libva_tpi::libva_tpi PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBVA_TPI_CFLAGS_OTHER}")

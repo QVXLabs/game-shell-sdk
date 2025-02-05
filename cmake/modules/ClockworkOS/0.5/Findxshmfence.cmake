@@ -9,6 +9,6 @@ set_target_properties(xshmfence::xshmfence PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(xshmfence::xshmfence PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XSHMFENCE_LIBRARY_DIRS}")
 set_target_properties(xshmfence::xshmfence PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XSHMFENCE_LIB_LIBRARIES}")
+                      "${XSHMFENCE_LIBRARIES}")
 set_target_properties(xshmfence::xshmfence PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XSHMFENCE_CFLAGS_OTHER}")

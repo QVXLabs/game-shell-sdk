@@ -9,6 +9,6 @@ set_target_properties(ibus_1.0::ibus_1.0 PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(ibus_1.0::ibus_1.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${IBUS_1.0_LIBRARY_DIRS}")
 set_target_properties(ibus_1.0::ibus_1.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${IBUS_1.0_LIB_LIBRARIES}")
+                      "${IBUS_1.0_LIBRARIES}")
 set_target_properties(ibus_1.0::ibus_1.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${IBUS_1.0_CFLAGS_OTHER}")

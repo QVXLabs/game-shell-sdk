@@ -9,6 +9,6 @@ set_target_properties(SDL2_image::SDL2_image PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(SDL2_image::SDL2_image PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${SDL2_IMAGE_LIBRARY_DIRS}")
 set_target_properties(SDL2_image::SDL2_image PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${SDL2_IMAGE_LIB_LIBRARIES}")
+                      "${SDL2_IMAGE_LIBRARIES}")
 set_target_properties(SDL2_image::SDL2_image PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${SDL2_IMAGE_CFLAGS_OTHER}")

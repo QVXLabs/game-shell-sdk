@@ -9,6 +9,6 @@ set_target_properties(xinerama::xinerama PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(xinerama::xinerama PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XINERAMA_LIBRARY_DIRS}")
 set_target_properties(xinerama::xinerama PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XINERAMA_LIB_LIBRARIES}")
+                      "${XINERAMA_LIBRARIES}")
 set_target_properties(xinerama::xinerama PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XINERAMA_CFLAGS_OTHER}")

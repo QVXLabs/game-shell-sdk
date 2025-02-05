@@ -9,6 +9,6 @@ set_target_properties(ncurses::ncurses PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(ncurses::ncurses PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${NCURSES_LIBRARY_DIRS}")
 set_target_properties(ncurses::ncurses PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${NCURSES_LIB_LIBRARIES}")
+                      "${NCURSES_LIBRARIES}")
 set_target_properties(ncurses::ncurses PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${NCURSES_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(shared_mime_info::shared_mime_info PROPERTIES INTERFACE_IN
 set_target_properties(shared_mime_info::shared_mime_info PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${SHARED_MIME_INFO_LIBRARY_DIRS}")
 set_target_properties(shared_mime_info::shared_mime_info PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${SHARED_MIME_INFO_LIB_LIBRARIES}")
+                      "${SHARED_MIME_INFO_LIBRARIES}")
 set_target_properties(shared_mime_info::shared_mime_info PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${SHARED_MIME_INFO_CFLAGS_OTHER}")

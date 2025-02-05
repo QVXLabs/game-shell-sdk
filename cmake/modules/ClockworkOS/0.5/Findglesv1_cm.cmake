@@ -9,6 +9,6 @@ set_target_properties(glesv1_cm::glesv1_cm PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(glesv1_cm::glesv1_cm PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GLESV1_CM_LIBRARY_DIRS}")
 set_target_properties(glesv1_cm::glesv1_cm PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GLESV1_CM_LIB_LIBRARIES}")
+                      "${GLESV1_CM_LIBRARIES}")
 set_target_properties(glesv1_cm::glesv1_cm PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GLESV1_CM_CFLAGS_OTHER}")

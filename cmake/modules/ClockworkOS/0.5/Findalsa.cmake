@@ -9,6 +9,6 @@ set_target_properties(alsa::alsa PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(alsa::alsa PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${ALSA_LIBRARY_DIRS}")
 set_target_properties(alsa::alsa PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${ALSA_LIB_LIBRARIES}")
+                      "${ALSA_LIBRARIES}")
 set_target_properties(alsa::alsa PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${ALSA_CFLAGS_OTHER}")

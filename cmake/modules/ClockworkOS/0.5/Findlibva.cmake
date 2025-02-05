@@ -9,6 +9,6 @@ set_target_properties(libva::libva PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(libva::libva PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBVA_LIBRARY_DIRS}")
 set_target_properties(libva::libva PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBVA_LIB_LIBRARIES}")
+                      "${LIBVA_LIBRARIES}")
 set_target_properties(libva::libva PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBVA_CFLAGS_OTHER}")

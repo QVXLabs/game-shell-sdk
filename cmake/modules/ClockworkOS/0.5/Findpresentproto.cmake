@@ -9,6 +9,6 @@ set_target_properties(presentproto::presentproto PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(presentproto::presentproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PRESENTPROTO_LIBRARY_DIRS}")
 set_target_properties(presentproto::presentproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PRESENTPROTO_LIB_LIBRARIES}")
+                      "${PRESENTPROTO_LIBRARIES}")
 set_target_properties(presentproto::presentproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PRESENTPROTO_CFLAGS_OTHER}")

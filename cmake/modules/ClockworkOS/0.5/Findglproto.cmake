@@ -9,6 +9,6 @@ set_target_properties(glproto::glproto PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(glproto::glproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GLPROTO_LIBRARY_DIRS}")
 set_target_properties(glproto::glproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GLPROTO_LIB_LIBRARIES}")
+                      "${GLPROTO_LIBRARIES}")
 set_target_properties(glproto::glproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GLPROTO_CFLAGS_OTHER}")

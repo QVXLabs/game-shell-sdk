@@ -9,6 +9,6 @@ set_target_properties(libdaemon::libdaemon PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(libdaemon::libdaemon PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBDAEMON_LIBRARY_DIRS}")
 set_target_properties(libdaemon::libdaemon PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBDAEMON_LIB_LIBRARIES}")
+                      "${LIBDAEMON_LIBRARIES}")
 set_target_properties(libdaemon::libdaemon PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBDAEMON_CFLAGS_OTHER}")

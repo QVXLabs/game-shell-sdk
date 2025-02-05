@@ -9,6 +9,6 @@ set_target_properties(atk_bridge_2.0::atk_bridge_2.0 PROPERTIES INTERFACE_INCLUD
 set_target_properties(atk_bridge_2.0::atk_bridge_2.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${ATK_BRIDGE_2.0_LIBRARY_DIRS}")
 set_target_properties(atk_bridge_2.0::atk_bridge_2.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${ATK_BRIDGE_2.0_LIB_LIBRARIES}")
+                      "${ATK_BRIDGE_2.0_LIBRARIES}")
 set_target_properties(atk_bridge_2.0::atk_bridge_2.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${ATK_BRIDGE_2.0_CFLAGS_OTHER}")

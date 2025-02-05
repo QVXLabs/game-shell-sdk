@@ -9,6 +9,6 @@ set_target_properties(xf86vidmodeproto::xf86vidmodeproto PROPERTIES INTERFACE_IN
 set_target_properties(xf86vidmodeproto::xf86vidmodeproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XF86VIDMODEPROTO_LIBRARY_DIRS}")
 set_target_properties(xf86vidmodeproto::xf86vidmodeproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XF86VIDMODEPROTO_LIB_LIBRARIES}")
+                      "${XF86VIDMODEPROTO_LIBRARIES}")
 set_target_properties(xf86vidmodeproto::xf86vidmodeproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XF86VIDMODEPROTO_CFLAGS_OTHER}")

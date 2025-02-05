@@ -9,6 +9,6 @@ set_target_properties(udev::udev PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(udev::udev PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${UDEV_LIBRARY_DIRS}")
 set_target_properties(udev::udev PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${UDEV_LIB_LIBRARIES}")
+                      "${UDEV_LIBRARIES}")
 set_target_properties(udev::udev PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${UDEV_CFLAGS_OTHER}")

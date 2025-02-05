@@ -15,7 +15,7 @@ set_target_properties({cmake_target_name} PROPERTIES INTERFACE_INCLUDE_DIRECTORI
 set_target_properties({cmake_target_name} PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${{{cmake_pkg_prefix}_LIBRARY_DIRS}}")
 set_target_properties({cmake_target_name} PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${{{cmake_pkg_prefix}_LIB_LIBRARIES}}")
+                      "${{{cmake_pkg_prefix}_LIBRARIES}}")
 set_target_properties({cmake_target_name} PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${{{cmake_pkg_prefix}_CFLAGS_OTHER}}")
 """

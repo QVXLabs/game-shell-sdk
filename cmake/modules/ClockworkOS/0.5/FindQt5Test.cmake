@@ -9,6 +9,6 @@ set_target_properties(Qt5Test::Qt5Test PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(Qt5Test::Qt5Test PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${QT5TEST_LIBRARY_DIRS}")
 set_target_properties(Qt5Test::Qt5Test PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${QT5TEST_LIB_LIBRARIES}")
+                      "${QT5TEST_LIBRARIES}")
 set_target_properties(Qt5Test::Qt5Test PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${QT5TEST_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(fixesproto::fixesproto PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(fixesproto::fixesproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${FIXESPROTO_LIBRARY_DIRS}")
 set_target_properties(fixesproto::fixesproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${FIXESPROTO_LIB_LIBRARIES}")
+                      "${FIXESPROTO_LIBRARIES}")
 set_target_properties(fixesproto::fixesproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${FIXESPROTO_CFLAGS_OTHER}")

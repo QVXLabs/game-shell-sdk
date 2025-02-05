@@ -9,6 +9,6 @@ set_target_properties(caca::caca PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(caca::caca PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CACA_LIBRARY_DIRS}")
 set_target_properties(caca::caca PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CACA_LIB_LIBRARIES}")
+                      "${CACA_LIBRARIES}")
 set_target_properties(caca::caca PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CACA_CFLAGS_OTHER}")

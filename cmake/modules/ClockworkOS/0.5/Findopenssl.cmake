@@ -9,6 +9,6 @@ set_target_properties(openssl::openssl PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(openssl::openssl PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${OPENSSL_LIBRARY_DIRS}")
 set_target_properties(openssl::openssl PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${OPENSSL_LIB_LIBRARIES}")
+                      "${OPENSSL_LIBRARIES}")
 set_target_properties(openssl::openssl PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${OPENSSL_CFLAGS_OTHER}")

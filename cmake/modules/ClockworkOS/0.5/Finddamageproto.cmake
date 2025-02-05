@@ -9,6 +9,6 @@ set_target_properties(damageproto::damageproto PROPERTIES INTERFACE_INCLUDE_DIRE
 set_target_properties(damageproto::damageproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${DAMAGEPROTO_LIBRARY_DIRS}")
 set_target_properties(damageproto::damageproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${DAMAGEPROTO_LIB_LIBRARIES}")
+                      "${DAMAGEPROTO_LIBRARIES}")
 set_target_properties(damageproto::damageproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${DAMAGEPROTO_CFLAGS_OTHER}")

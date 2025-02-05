@@ -9,6 +9,6 @@ set_target_properties(libcrypto::libcrypto PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(libcrypto::libcrypto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBCRYPTO_LIBRARY_DIRS}")
 set_target_properties(libcrypto::libcrypto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBCRYPTO_LIB_LIBRARIES}")
+                      "${LIBCRYPTO_LIBRARIES}")
 set_target_properties(libcrypto::libcrypto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBCRYPTO_CFLAGS_OTHER}")

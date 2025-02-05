@@ -9,6 +9,6 @@ set_target_properties(popt::popt PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(popt::popt PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${POPT_LIBRARY_DIRS}")
 set_target_properties(popt::popt PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${POPT_LIB_LIBRARIES}")
+                      "${POPT_LIBRARIES}")
 set_target_properties(popt::popt PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${POPT_CFLAGS_OTHER}")

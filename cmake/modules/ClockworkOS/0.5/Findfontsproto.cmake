@@ -9,6 +9,6 @@ set_target_properties(fontsproto::fontsproto PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(fontsproto::fontsproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${FONTSPROTO_LIBRARY_DIRS}")
 set_target_properties(fontsproto::fontsproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${FONTSPROTO_LIB_LIBRARIES}")
+                      "${FONTSPROTO_LIBRARIES}")
 set_target_properties(fontsproto::fontsproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${FONTSPROTO_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(xcomposite::xcomposite PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(xcomposite::xcomposite PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XCOMPOSITE_LIBRARY_DIRS}")
 set_target_properties(xcomposite::xcomposite PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XCOMPOSITE_LIB_LIBRARIES}")
+                      "${XCOMPOSITE_LIBRARIES}")
 set_target_properties(xcomposite::xcomposite PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XCOMPOSITE_CFLAGS_OTHER}")

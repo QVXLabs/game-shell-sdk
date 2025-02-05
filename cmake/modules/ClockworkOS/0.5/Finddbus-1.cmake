@@ -9,6 +9,6 @@ set_target_properties(dbus_1::dbus_1 PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(dbus_1::dbus_1 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${DBUS_1_LIBRARY_DIRS}")
 set_target_properties(dbus_1::dbus_1 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${DBUS_1_LIB_LIBRARIES}")
+                      "${DBUS_1_LIBRARIES}")
 set_target_properties(dbus_1::dbus_1 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${DBUS_1_CFLAGS_OTHER}")

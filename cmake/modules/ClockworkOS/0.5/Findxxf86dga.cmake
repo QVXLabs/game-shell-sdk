@@ -9,6 +9,6 @@ set_target_properties(xxf86dga::xxf86dga PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(xxf86dga::xxf86dga PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XXF86DGA_LIBRARY_DIRS}")
 set_target_properties(xxf86dga::xxf86dga PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XXF86DGA_LIB_LIBRARIES}")
+                      "${XXF86DGA_LIBRARIES}")
 set_target_properties(xxf86dga::xxf86dga PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XXF86DGA_CFLAGS_OTHER}")

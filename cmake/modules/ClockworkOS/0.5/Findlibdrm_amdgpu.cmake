@@ -9,6 +9,6 @@ set_target_properties(libdrm_amdgpu::libdrm_amdgpu PROPERTIES INTERFACE_INCLUDE_
 set_target_properties(libdrm_amdgpu::libdrm_amdgpu PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBDRM_AMDGPU_LIBRARY_DIRS}")
 set_target_properties(libdrm_amdgpu::libdrm_amdgpu PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBDRM_AMDGPU_LIB_LIBRARIES}")
+                      "${LIBDRM_AMDGPU_LIBRARIES}")
 set_target_properties(libdrm_amdgpu::libdrm_amdgpu PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBDRM_AMDGPU_CFLAGS_OTHER}")

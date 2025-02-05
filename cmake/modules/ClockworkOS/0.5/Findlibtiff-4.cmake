@@ -9,6 +9,6 @@ set_target_properties(libtiff_4::libtiff_4 PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(libtiff_4::libtiff_4 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBTIFF_4_LIBRARY_DIRS}")
 set_target_properties(libtiff_4::libtiff_4 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBTIFF_4_LIB_LIBRARIES}")
+                      "${LIBTIFF_4_LIBRARIES}")
 set_target_properties(libtiff_4::libtiff_4 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBTIFF_4_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(nspr::nspr PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(nspr::nspr PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${NSPR_LIBRARY_DIRS}")
 set_target_properties(nspr::nspr PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${NSPR_LIB_LIBRARIES}")
+                      "${NSPR_LIBRARIES}")
 set_target_properties(nspr::nspr PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${NSPR_CFLAGS_OTHER}")

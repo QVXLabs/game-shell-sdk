@@ -9,6 +9,6 @@ set_target_properties(notify_python::notify_python PROPERTIES INTERFACE_INCLUDE_
 set_target_properties(notify_python::notify_python PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${NOTIFY_PYTHON_LIBRARY_DIRS}")
 set_target_properties(notify_python::notify_python PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${NOTIFY_PYTHON_LIB_LIBRARIES}")
+                      "${NOTIFY_PYTHON_LIBRARIES}")
 set_target_properties(notify_python::notify_python PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${NOTIFY_PYTHON_CFLAGS_OTHER}")

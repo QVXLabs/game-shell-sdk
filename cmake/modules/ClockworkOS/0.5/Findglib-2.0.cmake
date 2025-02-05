@@ -9,6 +9,6 @@ set_target_properties(glib_2.0::glib_2.0 PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(glib_2.0::glib_2.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GLIB_2.0_LIBRARY_DIRS}")
 set_target_properties(glib_2.0::glib_2.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GLIB_2.0_LIB_LIBRARIES}")
+                      "${GLIB_2.0_LIBRARIES}")
 set_target_properties(glib_2.0::glib_2.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GLIB_2.0_CFLAGS_OTHER}")

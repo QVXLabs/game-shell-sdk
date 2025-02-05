@@ -9,6 +9,6 @@ set_target_properties(tinfo::tinfo PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(tinfo::tinfo PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${TINFO_LIBRARY_DIRS}")
 set_target_properties(tinfo::tinfo PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${TINFO_LIB_LIBRARIES}")
+                      "${TINFO_LIBRARIES}")
 set_target_properties(tinfo::tinfo PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${TINFO_CFLAGS_OTHER}")

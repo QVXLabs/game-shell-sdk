@@ -9,6 +9,6 @@ set_target_properties(egl::egl PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(egl::egl PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${EGL_LIBRARY_DIRS}")
 set_target_properties(egl::egl PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${EGL_LIB_LIBRARIES}")
+                      "${EGL_LIBRARIES}")
 set_target_properties(egl::egl PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${EGL_CFLAGS_OTHER}")

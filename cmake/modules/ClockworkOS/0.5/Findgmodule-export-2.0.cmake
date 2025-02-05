@@ -9,6 +9,6 @@ set_target_properties(gmodule_export_2.0::gmodule_export_2.0 PROPERTIES INTERFAC
 set_target_properties(gmodule_export_2.0::gmodule_export_2.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GMODULE_EXPORT_2.0_LIBRARY_DIRS}")
 set_target_properties(gmodule_export_2.0::gmodule_export_2.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GMODULE_EXPORT_2.0_LIB_LIBRARIES}")
+                      "${GMODULE_EXPORT_2.0_LIBRARIES}")
 set_target_properties(gmodule_export_2.0::gmodule_export_2.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GMODULE_EXPORT_2.0_CFLAGS_OTHER}")

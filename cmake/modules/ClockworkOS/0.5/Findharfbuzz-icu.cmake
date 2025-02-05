@@ -9,6 +9,6 @@ set_target_properties(harfbuzz_icu::harfbuzz_icu PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(harfbuzz_icu::harfbuzz_icu PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${HARFBUZZ_ICU_LIBRARY_DIRS}")
 set_target_properties(harfbuzz_icu::harfbuzz_icu PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${HARFBUZZ_ICU_LIB_LIBRARIES}")
+                      "${HARFBUZZ_ICU_LIBRARIES}")
 set_target_properties(harfbuzz_icu::harfbuzz_icu PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${HARFBUZZ_ICU_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(compositeproto::compositeproto PROPERTIES INTERFACE_INCLUD
 set_target_properties(compositeproto::compositeproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${COMPOSITEPROTO_LIBRARY_DIRS}")
 set_target_properties(compositeproto::compositeproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${COMPOSITEPROTO_LIB_LIBRARIES}")
+                      "${COMPOSITEPROTO_LIBRARIES}")
 set_target_properties(compositeproto::compositeproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${COMPOSITEPROTO_CFLAGS_OTHER}")

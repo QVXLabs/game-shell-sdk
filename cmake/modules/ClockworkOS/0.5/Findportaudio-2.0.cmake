@@ -9,6 +9,6 @@ set_target_properties(portaudio_2.0::portaudio_2.0 PROPERTIES INTERFACE_INCLUDE_
 set_target_properties(portaudio_2.0::portaudio_2.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PORTAUDIO_2.0_LIBRARY_DIRS}")
 set_target_properties(portaudio_2.0::portaudio_2.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PORTAUDIO_2.0_LIB_LIBRARIES}")
+                      "${PORTAUDIO_2.0_LIBRARIES}")
 set_target_properties(portaudio_2.0::portaudio_2.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PORTAUDIO_2.0_CFLAGS_OTHER}")

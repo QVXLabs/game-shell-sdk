@@ -9,6 +9,6 @@ set_target_properties(portaudiocpp::portaudiocpp PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(portaudiocpp::portaudiocpp PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PORTAUDIOCPP_LIBRARY_DIRS}")
 set_target_properties(portaudiocpp::portaudiocpp PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PORTAUDIOCPP_LIB_LIBRARIES}")
+                      "${PORTAUDIOCPP_LIBRARIES}")
 set_target_properties(portaudiocpp::portaudiocpp PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PORTAUDIOCPP_CFLAGS_OTHER}")

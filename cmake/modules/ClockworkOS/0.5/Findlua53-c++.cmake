@@ -9,6 +9,6 @@ set_target_properties(lua53_c++::lua53_c++ PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(lua53_c++::lua53_c++ PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LUA53_C++_LIBRARY_DIRS}")
 set_target_properties(lua53_c++::lua53_c++ PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LUA53_C++_LIB_LIBRARIES}")
+                      "${LUA53_C++_LIBRARIES}")
 set_target_properties(lua53_c++::lua53_c++ PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LUA53_C++_CFLAGS_OTHER}")

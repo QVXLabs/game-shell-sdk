@@ -9,6 +9,6 @@ set_target_properties(libva_glx::libva_glx PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(libva_glx::libva_glx PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBVA_GLX_LIBRARY_DIRS}")
 set_target_properties(libva_glx::libva_glx PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBVA_GLX_LIB_LIBRARIES}")
+                      "${LIBVA_GLX_LIBRARIES}")
 set_target_properties(libva_glx::libva_glx PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBVA_GLX_CFLAGS_OTHER}")

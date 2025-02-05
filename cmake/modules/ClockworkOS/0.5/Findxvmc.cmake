@@ -9,6 +9,6 @@ set_target_properties(xvmc::xvmc PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xvmc::xvmc PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XVMC_LIBRARY_DIRS}")
 set_target_properties(xvmc::xvmc PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XVMC_LIB_LIBRARIES}")
+                      "${XVMC_LIBRARIES}")
 set_target_properties(xvmc::xvmc PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XVMC_CFLAGS_OTHER}")

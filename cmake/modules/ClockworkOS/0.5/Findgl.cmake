@@ -9,6 +9,6 @@ set_target_properties(gl::gl PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(gl::gl PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GL_LIBRARY_DIRS}")
 set_target_properties(gl::gl PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GL_LIB_LIBRARIES}")
+                      "${GL_LIBRARIES}")
 set_target_properties(gl::gl PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GL_CFLAGS_OTHER}")

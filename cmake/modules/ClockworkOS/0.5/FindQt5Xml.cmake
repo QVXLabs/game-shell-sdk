@@ -9,6 +9,6 @@ set_target_properties(Qt5Xml::Qt5Xml PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(Qt5Xml::Qt5Xml PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${QT5XML_LIBRARY_DIRS}")
 set_target_properties(Qt5Xml::Qt5Xml PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${QT5XML_LIB_LIBRARIES}")
+                      "${QT5XML_LIBRARIES}")
 set_target_properties(Qt5Xml::Qt5Xml PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${QT5XML_CFLAGS_OTHER}")

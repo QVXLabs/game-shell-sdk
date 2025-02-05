@@ -9,6 +9,6 @@ set_target_properties(dri::dri PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(dri::dri PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${DRI_LIBRARY_DIRS}")
 set_target_properties(dri::dri PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${DRI_LIB_LIBRARIES}")
+                      "${DRI_LIBRARIES}")
 set_target_properties(dri::dri PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${DRI_CFLAGS_OTHER}")

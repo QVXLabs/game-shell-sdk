@@ -9,6 +9,6 @@ set_target_properties(libjpeg::libjpeg PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(libjpeg::libjpeg PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBJPEG_LIBRARY_DIRS}")
 set_target_properties(libjpeg::libjpeg PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBJPEG_LIB_LIBRARIES}")
+                      "${LIBJPEG_LIBRARIES}")
 set_target_properties(libjpeg::libjpeg PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBJPEG_CFLAGS_OTHER}")

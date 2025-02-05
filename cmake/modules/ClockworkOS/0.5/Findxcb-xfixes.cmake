@@ -9,6 +9,6 @@ set_target_properties(xcb_xfixes::xcb_xfixes PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(xcb_xfixes::xcb_xfixes PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XCB_XFIXES_LIBRARY_DIRS}")
 set_target_properties(xcb_xfixes::xcb_xfixes PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XCB_XFIXES_LIB_LIBRARIES}")
+                      "${XCB_XFIXES_LIBRARIES}")
 set_target_properties(xcb_xfixes::xcb_xfixes PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XCB_XFIXES_CFLAGS_OTHER}")

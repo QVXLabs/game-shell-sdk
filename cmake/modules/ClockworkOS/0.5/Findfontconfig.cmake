@@ -9,6 +9,6 @@ set_target_properties(fontconfig::fontconfig PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(fontconfig::fontconfig PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${FONTCONFIG_LIBRARY_DIRS}")
 set_target_properties(fontconfig::fontconfig PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${FONTCONFIG_LIB_LIBRARIES}")
+                      "${FONTCONFIG_LIBRARIES}")
 set_target_properties(fontconfig::fontconfig PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${FONTCONFIG_CFLAGS_OTHER}")

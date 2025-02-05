@@ -9,6 +9,6 @@ set_target_properties(xv::xv PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xv::xv PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XV_LIBRARY_DIRS}")
 set_target_properties(xv::xv PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XV_LIB_LIBRARIES}")
+                      "${XV_LIBRARIES}")
 set_target_properties(xv::xv PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XV_CFLAGS_OTHER}")

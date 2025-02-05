@@ -9,6 +9,6 @@ set_target_properties(cairo_svg::cairo_svg PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(cairo_svg::cairo_svg PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CAIRO_SVG_LIBRARY_DIRS}")
 set_target_properties(cairo_svg::cairo_svg PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CAIRO_SVG_LIB_LIBRARIES}")
+                      "${CAIRO_SVG_LIBRARIES}")
 set_target_properties(cairo_svg::cairo_svg PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CAIRO_SVG_CFLAGS_OTHER}")

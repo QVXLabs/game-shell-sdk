@@ -9,6 +9,6 @@ set_target_properties(xextproto::xextproto PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(xextproto::xextproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XEXTPROTO_LIBRARY_DIRS}")
 set_target_properties(xextproto::xextproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XEXTPROTO_LIB_LIBRARIES}")
+                      "${XEXTPROTO_LIBRARIES}")
 set_target_properties(xextproto::xextproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XEXTPROTO_CFLAGS_OTHER}")

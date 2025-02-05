@@ -9,6 +9,6 @@ set_target_properties(epoxy::epoxy PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(epoxy::epoxy PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${EPOXY_LIBRARY_DIRS}")
 set_target_properties(epoxy::epoxy PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${EPOXY_LIB_LIBRARIES}")
+                      "${EPOXY_LIBRARIES}")
 set_target_properties(epoxy::epoxy PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${EPOXY_CFLAGS_OTHER}")

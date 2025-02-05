@@ -9,6 +9,6 @@ set_target_properties(renderproto::renderproto PROPERTIES INTERFACE_INCLUDE_DIRE
 set_target_properties(renderproto::renderproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${RENDERPROTO_LIBRARY_DIRS}")
 set_target_properties(renderproto::renderproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${RENDERPROTO_LIB_LIBRARIES}")
+                      "${RENDERPROTO_LIBRARIES}")
 set_target_properties(renderproto::renderproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${RENDERPROTO_CFLAGS_OTHER}")

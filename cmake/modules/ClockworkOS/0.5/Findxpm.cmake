@@ -9,6 +9,6 @@ set_target_properties(xpm::xpm PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xpm::xpm PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XPM_LIBRARY_DIRS}")
 set_target_properties(xpm::xpm PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XPM_LIB_LIBRARIES}")
+                      "${XPM_LIBRARIES}")
 set_target_properties(xpm::xpm PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XPM_CFLAGS_OTHER}")

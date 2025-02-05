@@ -9,6 +9,6 @@ set_target_properties(libva_drm::libva_drm PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(libva_drm::libva_drm PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBVA_DRM_LIBRARY_DIRS}")
 set_target_properties(libva_drm::libva_drm PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBVA_DRM_LIB_LIBRARIES}")
+                      "${LIBVA_DRM_LIBRARIES}")
 set_target_properties(libva_drm::libva_drm PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBVA_DRM_CFLAGS_OTHER}")

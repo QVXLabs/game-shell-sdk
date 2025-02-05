@@ -9,6 +9,6 @@ set_target_properties(luajit::luajit PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(luajit::luajit PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LUAJIT_LIBRARY_DIRS}")
 set_target_properties(luajit::luajit PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LUAJIT_LIB_LIBRARIES}")
+                      "${LUAJIT_LIBRARIES}")
 set_target_properties(luajit::luajit PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LUAJIT_CFLAGS_OTHER}")

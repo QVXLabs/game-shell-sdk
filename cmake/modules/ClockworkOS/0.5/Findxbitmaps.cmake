@@ -9,6 +9,6 @@ set_target_properties(xbitmaps::xbitmaps PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(xbitmaps::xbitmaps PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XBITMAPS_LIBRARY_DIRS}")
 set_target_properties(xbitmaps::xbitmaps PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XBITMAPS_LIB_LIBRARIES}")
+                      "${XBITMAPS_LIBRARIES}")
 set_target_properties(xbitmaps::xbitmaps PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XBITMAPS_CFLAGS_OTHER}")

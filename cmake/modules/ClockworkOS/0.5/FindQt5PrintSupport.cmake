@@ -9,6 +9,6 @@ set_target_properties(Qt5PrintSupport::Qt5PrintSupport PROPERTIES INTERFACE_INCL
 set_target_properties(Qt5PrintSupport::Qt5PrintSupport PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${QT5PRINTSUPPORT_LIBRARY_DIRS}")
 set_target_properties(Qt5PrintSupport::Qt5PrintSupport PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${QT5PRINTSUPPORT_LIB_LIBRARIES}")
+                      "${QT5PRINTSUPPORT_LIBRARIES}")
 set_target_properties(Qt5PrintSupport::Qt5PrintSupport PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${QT5PRINTSUPPORT_CFLAGS_OTHER}")

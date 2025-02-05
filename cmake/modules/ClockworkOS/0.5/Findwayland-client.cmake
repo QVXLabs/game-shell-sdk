@@ -9,6 +9,6 @@ set_target_properties(wayland_client::wayland_client PROPERTIES INTERFACE_INCLUD
 set_target_properties(wayland_client::wayland_client PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${WAYLAND_CLIENT_LIBRARY_DIRS}")
 set_target_properties(wayland_client::wayland_client PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${WAYLAND_CLIENT_LIB_LIBRARIES}")
+                      "${WAYLAND_CLIENT_LIBRARIES}")
 set_target_properties(wayland_client::wayland_client PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${WAYLAND_CLIENT_CFLAGS_OTHER}")

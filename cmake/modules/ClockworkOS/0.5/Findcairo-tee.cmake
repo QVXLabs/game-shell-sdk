@@ -9,6 +9,6 @@ set_target_properties(cairo_tee::cairo_tee PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(cairo_tee::cairo_tee PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CAIRO_TEE_LIBRARY_DIRS}")
 set_target_properties(cairo_tee::cairo_tee PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CAIRO_TEE_LIB_LIBRARIES}")
+                      "${CAIRO_TEE_LIBRARIES}")
 set_target_properties(cairo_tee::cairo_tee PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CAIRO_TEE_CFLAGS_OTHER}")

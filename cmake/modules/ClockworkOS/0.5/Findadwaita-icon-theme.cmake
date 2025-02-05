@@ -9,6 +9,6 @@ set_target_properties(adwaita_icon_theme::adwaita_icon_theme PROPERTIES INTERFAC
 set_target_properties(adwaita_icon_theme::adwaita_icon_theme PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${ADWAITA_ICON_THEME_LIBRARY_DIRS}")
 set_target_properties(adwaita_icon_theme::adwaita_icon_theme PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${ADWAITA_ICON_THEME_LIB_LIBRARIES}")
+                      "${ADWAITA_ICON_THEME_LIBRARIES}")
 set_target_properties(adwaita_icon_theme::adwaita_icon_theme PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${ADWAITA_ICON_THEME_CFLAGS_OTHER}")

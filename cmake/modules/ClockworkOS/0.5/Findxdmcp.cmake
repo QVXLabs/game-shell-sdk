@@ -9,6 +9,6 @@ set_target_properties(xdmcp::xdmcp PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xdmcp::xdmcp PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XDMCP_LIBRARY_DIRS}")
 set_target_properties(xdmcp::xdmcp PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XDMCP_LIB_LIBRARIES}")
+                      "${XDMCP_LIBRARIES}")
 set_target_properties(xdmcp::xdmcp PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XDMCP_CFLAGS_OTHER}")

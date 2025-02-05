@@ -9,6 +9,6 @@ set_target_properties(pthread_stubs::pthread_stubs PROPERTIES INTERFACE_INCLUDE_
 set_target_properties(pthread_stubs::pthread_stubs PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PTHREAD_STUBS_LIBRARY_DIRS}")
 set_target_properties(pthread_stubs::pthread_stubs PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PTHREAD_STUBS_LIB_LIBRARIES}")
+                      "${PTHREAD_STUBS_LIBRARIES}")
 set_target_properties(pthread_stubs::pthread_stubs PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PTHREAD_STUBS_CFLAGS_OTHER}")

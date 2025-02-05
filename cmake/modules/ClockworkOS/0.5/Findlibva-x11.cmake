@@ -9,6 +9,6 @@ set_target_properties(libva_x11::libva_x11 PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(libva_x11::libva_x11 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBVA_X11_LIBRARY_DIRS}")
 set_target_properties(libva_x11::libva_x11 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBVA_X11_LIB_LIBRARIES}")
+                      "${LIBVA_X11_LIBRARIES}")
 set_target_properties(libva_x11::libva_x11 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBVA_X11_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(panel::panel PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(panel::panel PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PANEL_LIBRARY_DIRS}")
 set_target_properties(panel::panel PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PANEL_LIB_LIBRARIES}")
+                      "${PANEL_LIBRARIES}")
 set_target_properties(panel::panel PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PANEL_CFLAGS_OTHER}")

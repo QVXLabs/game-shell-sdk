@@ -9,6 +9,6 @@ set_target_properties(dmx::dmx PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(dmx::dmx PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${DMX_LIBRARY_DIRS}")
 set_target_properties(dmx::dmx PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${DMX_LIB_LIBRARIES}")
+                      "${DMX_LIBRARIES}")
 set_target_properties(dmx::dmx PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${DMX_CFLAGS_OTHER}")

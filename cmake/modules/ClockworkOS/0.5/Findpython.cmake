@@ -9,6 +9,6 @@ set_target_properties(python::python PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(python::python PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PYTHON_LIBRARY_DIRS}")
 set_target_properties(python::python PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PYTHON_LIB_LIBRARIES}")
+                      "${PYTHON_LIBRARIES}")
 set_target_properties(python::python PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PYTHON_CFLAGS_OTHER}")

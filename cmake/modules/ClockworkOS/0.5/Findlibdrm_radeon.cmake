@@ -9,6 +9,6 @@ set_target_properties(libdrm_radeon::libdrm_radeon PROPERTIES INTERFACE_INCLUDE_
 set_target_properties(libdrm_radeon::libdrm_radeon PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBDRM_RADEON_LIBRARY_DIRS}")
 set_target_properties(libdrm_radeon::libdrm_radeon PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBDRM_RADEON_LIB_LIBRARIES}")
+                      "${LIBDRM_RADEON_LIBRARIES}")
 set_target_properties(libdrm_radeon::libdrm_radeon PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBDRM_RADEON_CFLAGS_OTHER}")

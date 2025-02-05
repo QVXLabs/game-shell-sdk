@@ -9,6 +9,6 @@ set_target_properties(cairo_xlib::cairo_xlib PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(cairo_xlib::cairo_xlib PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CAIRO_XLIB_LIBRARY_DIRS}")
 set_target_properties(cairo_xlib::cairo_xlib PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CAIRO_XLIB_LIB_LIBRARIES}")
+                      "${CAIRO_XLIB_LIBRARIES}")
 set_target_properties(cairo_xlib::cairo_xlib PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CAIRO_XLIB_CFLAGS_OTHER}")

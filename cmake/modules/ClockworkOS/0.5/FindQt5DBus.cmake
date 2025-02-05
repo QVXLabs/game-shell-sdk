@@ -9,6 +9,6 @@ set_target_properties(Qt5DBus::Qt5DBus PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(Qt5DBus::Qt5DBus PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${QT5DBUS_LIBRARY_DIRS}")
 set_target_properties(Qt5DBus::Qt5DBus PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${QT5DBUS_LIB_LIBRARIES}")
+                      "${QT5DBUS_LIBRARIES}")
 set_target_properties(Qt5DBus::Qt5DBus PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${QT5DBUS_CFLAGS_OTHER}")

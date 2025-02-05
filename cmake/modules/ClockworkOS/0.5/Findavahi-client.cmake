@@ -9,6 +9,6 @@ set_target_properties(avahi_client::avahi_client PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(avahi_client::avahi_client PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${AVAHI_CLIENT_LIBRARY_DIRS}")
 set_target_properties(avahi_client::avahi_client PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${AVAHI_CLIENT_LIB_LIBRARIES}")
+                      "${AVAHI_CLIENT_LIBRARIES}")
 set_target_properties(avahi_client::avahi_client PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${AVAHI_CLIENT_CFLAGS_OTHER}")

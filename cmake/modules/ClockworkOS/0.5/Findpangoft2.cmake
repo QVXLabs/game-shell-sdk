@@ -9,6 +9,6 @@ set_target_properties(pangoft2::pangoft2 PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(pangoft2::pangoft2 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PANGOFT2_LIBRARY_DIRS}")
 set_target_properties(pangoft2::pangoft2 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PANGOFT2_LIB_LIBRARIES}")
+                      "${PANGOFT2_LIBRARIES}")
 set_target_properties(pangoft2::pangoft2 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PANGOFT2_CFLAGS_OTHER}")

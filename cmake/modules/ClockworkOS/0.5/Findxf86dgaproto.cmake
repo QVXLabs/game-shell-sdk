@@ -9,6 +9,6 @@ set_target_properties(xf86dgaproto::xf86dgaproto PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(xf86dgaproto::xf86dgaproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XF86DGAPROTO_LIBRARY_DIRS}")
 set_target_properties(xf86dgaproto::xf86dgaproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XF86DGAPROTO_LIB_LIBRARIES}")
+                      "${XF86DGAPROTO_LIBRARIES}")
 set_target_properties(xf86dgaproto::xf86dgaproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XF86DGAPROTO_CFLAGS_OTHER}")

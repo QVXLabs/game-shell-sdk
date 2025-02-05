@@ -9,6 +9,6 @@ set_target_properties(nss::nss PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(nss::nss PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${NSS_LIBRARY_DIRS}")
 set_target_properties(nss::nss PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${NSS_LIB_LIBRARIES}")
+                      "${NSS_LIBRARIES}")
 set_target_properties(nss::nss PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${NSS_CFLAGS_OTHER}")

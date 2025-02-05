@@ -9,6 +9,6 @@ set_target_properties(xau::xau PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xau::xau PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XAU_LIBRARY_DIRS}")
 set_target_properties(xau::xau PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XAU_LIB_LIBRARIES}")
+                      "${XAU_LIBRARIES}")
 set_target_properties(xau::xau PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XAU_CFLAGS_OTHER}")

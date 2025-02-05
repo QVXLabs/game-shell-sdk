@@ -9,6 +9,6 @@ set_target_properties(xtst::xtst PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xtst::xtst PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XTST_LIBRARY_DIRS}")
 set_target_properties(xtst::xtst PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XTST_LIB_LIBRARIES}")
+                      "${XTST_LIBRARIES}")
 set_target_properties(xtst::xtst PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XTST_CFLAGS_OTHER}")

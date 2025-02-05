@@ -9,6 +9,6 @@ set_target_properties(xdamage::xdamage PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xdamage::xdamage PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XDAMAGE_LIBRARY_DIRS}")
 set_target_properties(xdamage::xdamage PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XDAMAGE_LIB_LIBRARIES}")
+                      "${XDAMAGE_LIBRARIES}")
 set_target_properties(xdamage::xdamage PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XDAMAGE_CFLAGS_OTHER}")

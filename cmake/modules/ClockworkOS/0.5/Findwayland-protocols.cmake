@@ -9,6 +9,6 @@ set_target_properties(wayland_protocols::wayland_protocols PROPERTIES INTERFACE_
 set_target_properties(wayland_protocols::wayland_protocols PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${WAYLAND_PROTOCOLS_LIBRARY_DIRS}")
 set_target_properties(wayland_protocols::wayland_protocols PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${WAYLAND_PROTOCOLS_LIB_LIBRARIES}")
+                      "${WAYLAND_PROTOCOLS_LIBRARIES}")
 set_target_properties(wayland_protocols::wayland_protocols PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${WAYLAND_PROTOCOLS_CFLAGS_OTHER}")

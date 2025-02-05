@@ -9,6 +9,6 @@ set_target_properties(xt::xt PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xt::xt PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XT_LIBRARY_DIRS}")
 set_target_properties(xt::xt PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XT_LIB_LIBRARIES}")
+                      "${XT_LIBRARIES}")
 set_target_properties(xt::xt PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XT_CFLAGS_OTHER}")

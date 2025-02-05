@@ -9,6 +9,6 @@ set_target_properties(dri2proto::dri2proto PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(dri2proto::dri2proto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${DRI2PROTO_LIBRARY_DIRS}")
 set_target_properties(dri2proto::dri2proto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${DRI2PROTO_LIB_LIBRARIES}")
+                      "${DRI2PROTO_LIBRARIES}")
 set_target_properties(dri2proto::dri2proto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${DRI2PROTO_CFLAGS_OTHER}")

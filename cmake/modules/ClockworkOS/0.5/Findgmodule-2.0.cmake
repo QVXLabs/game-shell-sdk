@@ -9,6 +9,6 @@ set_target_properties(gmodule_2.0::gmodule_2.0 PROPERTIES INTERFACE_INCLUDE_DIRE
 set_target_properties(gmodule_2.0::gmodule_2.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GMODULE_2.0_LIBRARY_DIRS}")
 set_target_properties(gmodule_2.0::gmodule_2.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GMODULE_2.0_LIB_LIBRARIES}")
+                      "${GMODULE_2.0_LIBRARIES}")
 set_target_properties(gmodule_2.0::gmodule_2.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GMODULE_2.0_CFLAGS_OTHER}")

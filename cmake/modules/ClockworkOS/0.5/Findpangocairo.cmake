@@ -9,6 +9,6 @@ set_target_properties(pangocairo::pangocairo PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(pangocairo::pangocairo PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PANGOCAIRO_LIBRARY_DIRS}")
 set_target_properties(pangocairo::pangocairo PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PANGOCAIRO_LIB_LIBRARIES}")
+                      "${PANGOCAIRO_LIBRARIES}")
 set_target_properties(pangocairo::pangocairo PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PANGOCAIRO_CFLAGS_OTHER}")

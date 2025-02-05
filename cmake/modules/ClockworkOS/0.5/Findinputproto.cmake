@@ -9,6 +9,6 @@ set_target_properties(inputproto::inputproto PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(inputproto::inputproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${INPUTPROTO_LIBRARY_DIRS}")
 set_target_properties(inputproto::inputproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${INPUTPROTO_LIB_LIBRARIES}")
+                      "${INPUTPROTO_LIBRARIES}")
 set_target_properties(inputproto::inputproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${INPUTPROTO_CFLAGS_OTHER}")

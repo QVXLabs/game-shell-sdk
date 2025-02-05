@@ -9,6 +9,6 @@ set_target_properties(python_3.5m::python_3.5m PROPERTIES INTERFACE_INCLUDE_DIRE
 set_target_properties(python_3.5m::python_3.5m PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PYTHON_3.5M_LIBRARY_DIRS}")
 set_target_properties(python_3.5m::python_3.5m PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PYTHON_3.5M_LIB_LIBRARIES}")
+                      "${PYTHON_3.5M_LIBRARIES}")
 set_target_properties(python_3.5m::python_3.5m PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PYTHON_3.5M_CFLAGS_OTHER}")

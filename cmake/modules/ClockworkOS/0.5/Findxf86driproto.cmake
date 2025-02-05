@@ -9,6 +9,6 @@ set_target_properties(xf86driproto::xf86driproto PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(xf86driproto::xf86driproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XF86DRIPROTO_LIBRARY_DIRS}")
 set_target_properties(xf86driproto::xf86driproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XF86DRIPROTO_LIB_LIBRARIES}")
+                      "${XF86DRIPROTO_LIBRARIES}")
 set_target_properties(xf86driproto::xf86driproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XF86DRIPROTO_CFLAGS_OTHER}")

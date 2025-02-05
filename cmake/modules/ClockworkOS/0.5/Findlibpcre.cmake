@@ -9,6 +9,6 @@ set_target_properties(libpcre::libpcre PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(libpcre::libpcre PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBPCRE_LIBRARY_DIRS}")
 set_target_properties(libpcre::libpcre PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBPCRE_LIB_LIBRARIES}")
+                      "${LIBPCRE_LIBRARIES}")
 set_target_properties(libpcre::libpcre PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBPCRE_CFLAGS_OTHER}")

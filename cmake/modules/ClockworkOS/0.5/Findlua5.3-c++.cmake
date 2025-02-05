@@ -9,6 +9,6 @@ set_target_properties(lua5.3_c++::lua5.3_c++ PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(lua5.3_c++::lua5.3_c++ PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LUA5.3_C++_LIBRARY_DIRS}")
 set_target_properties(lua5.3_c++::lua5.3_c++ PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LUA5.3_C++_LIB_LIBRARIES}")
+                      "${LUA5.3_C++_LIBRARIES}")
 set_target_properties(lua5.3_c++::lua5.3_c++ PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LUA5.3_C++_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(libconfig::libconfig PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(libconfig::libconfig PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBCONFIG_LIBRARY_DIRS}")
 set_target_properties(libconfig::libconfig PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBCONFIG_LIB_LIBRARIES}")
+                      "${LIBCONFIG_LIBRARIES}")
 set_target_properties(libconfig::libconfig PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBCONFIG_CFLAGS_OTHER}")

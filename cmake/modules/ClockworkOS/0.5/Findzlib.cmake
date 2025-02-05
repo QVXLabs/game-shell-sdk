@@ -9,6 +9,6 @@ set_target_properties(zlib::zlib PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(zlib::zlib PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${ZLIB_LIBRARY_DIRS}")
 set_target_properties(zlib::zlib PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${ZLIB_LIB_LIBRARIES}")
+                      "${ZLIB_LIBRARIES}")
 set_target_properties(zlib::zlib PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${ZLIB_CFLAGS_OTHER}")

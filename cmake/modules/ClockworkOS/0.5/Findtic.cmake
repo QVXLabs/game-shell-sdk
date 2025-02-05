@@ -9,6 +9,6 @@ set_target_properties(tic::tic PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(tic::tic PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${TIC_LIBRARY_DIRS}")
 set_target_properties(tic::tic PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${TIC_LIB_LIBRARIES}")
+                      "${TIC_LIBRARIES}")
 set_target_properties(tic::tic PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${TIC_CFLAGS_OTHER}")

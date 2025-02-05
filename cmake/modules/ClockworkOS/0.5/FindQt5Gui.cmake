@@ -9,6 +9,6 @@ set_target_properties(Qt5Gui::Qt5Gui PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(Qt5Gui::Qt5Gui PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${QT5GUI_LIBRARY_DIRS}")
 set_target_properties(Qt5Gui::Qt5Gui PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${QT5GUI_LIB_LIBRARIES}")
+                      "${QT5GUI_LIBRARIES}")
 set_target_properties(Qt5Gui::Qt5Gui PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${QT5GUI_CFLAGS_OTHER}")

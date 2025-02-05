@@ -9,6 +9,6 @@ set_target_properties(uuid::uuid PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(uuid::uuid PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${UUID_LIBRARY_DIRS}")
 set_target_properties(uuid::uuid PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${UUID_LIB_LIBRARIES}")
+                      "${UUID_LIBRARIES}")
 set_target_properties(uuid::uuid PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${UUID_CFLAGS_OTHER}")

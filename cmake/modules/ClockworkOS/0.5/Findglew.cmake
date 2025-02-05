@@ -9,6 +9,6 @@ set_target_properties(glew::glew PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(glew::glew PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GLEW_LIBRARY_DIRS}")
 set_target_properties(glew::glew PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GLEW_LIB_LIBRARIES}")
+                      "${GLEW_LIBRARIES}")
 set_target_properties(glew::glew PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GLEW_CFLAGS_OTHER}")

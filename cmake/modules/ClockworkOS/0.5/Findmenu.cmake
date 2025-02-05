@@ -9,6 +9,6 @@ set_target_properties(menu::menu PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(menu::menu PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${MENU_LIBRARY_DIRS}")
 set_target_properties(menu::menu PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${MENU_LIB_LIBRARIES}")
+                      "${MENU_LIBRARIES}")
 set_target_properties(menu::menu PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${MENU_CFLAGS_OTHER}")

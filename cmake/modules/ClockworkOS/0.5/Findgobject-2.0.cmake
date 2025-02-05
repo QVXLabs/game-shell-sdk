@@ -9,6 +9,6 @@ set_target_properties(gobject_2.0::gobject_2.0 PROPERTIES INTERFACE_INCLUDE_DIRE
 set_target_properties(gobject_2.0::gobject_2.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${GOBJECT_2.0_LIBRARY_DIRS}")
 set_target_properties(gobject_2.0::gobject_2.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${GOBJECT_2.0_LIB_LIBRARIES}")
+                      "${GOBJECT_2.0_LIBRARIES}")
 set_target_properties(gobject_2.0::gobject_2.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${GOBJECT_2.0_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(xorg_sgml_doctools::xorg_sgml_doctools PROPERTIES INTERFAC
 set_target_properties(xorg_sgml_doctools::xorg_sgml_doctools PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XORG_SGML_DOCTOOLS_LIBRARY_DIRS}")
 set_target_properties(xorg_sgml_doctools::xorg_sgml_doctools PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XORG_SGML_DOCTOOLS_LIB_LIBRARIES}")
+                      "${XORG_SGML_DOCTOOLS_LIBRARIES}")
 set_target_properties(xorg_sgml_doctools::xorg_sgml_doctools PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XORG_SGML_DOCTOOLS_CFLAGS_OTHER}")

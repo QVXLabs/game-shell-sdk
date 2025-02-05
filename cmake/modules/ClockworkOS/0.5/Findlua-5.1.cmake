@@ -9,6 +9,6 @@ set_target_properties(lua_5.1::lua_5.1 PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(lua_5.1::lua_5.1 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LUA_5.1_LIBRARY_DIRS}")
 set_target_properties(lua_5.1::lua_5.1 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LUA_5.1_LIB_LIBRARIES}")
+                      "${LUA_5.1_LIBRARIES}")
 set_target_properties(lua_5.1::lua_5.1 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LUA_5.1_CFLAGS_OTHER}")

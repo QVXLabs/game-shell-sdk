@@ -9,6 +9,6 @@ set_target_properties(icu_uc::icu_uc PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(icu_uc::icu_uc PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${ICU_UC_LIBRARY_DIRS}")
 set_target_properties(icu_uc::icu_uc PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${ICU_UC_LIB_LIBRARIES}")
+                      "${ICU_UC_LIBRARIES}")
 set_target_properties(icu_uc::icu_uc PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${ICU_UC_CFLAGS_OTHER}")

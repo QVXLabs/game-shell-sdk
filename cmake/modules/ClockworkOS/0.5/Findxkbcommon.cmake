@@ -9,6 +9,6 @@ set_target_properties(xkbcommon::xkbcommon PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(xkbcommon::xkbcommon PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XKBCOMMON_LIBRARY_DIRS}")
 set_target_properties(xkbcommon::xkbcommon PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XKBCOMMON_LIB_LIBRARIES}")
+                      "${XKBCOMMON_LIBRARIES}")
 set_target_properties(xkbcommon::xkbcommon PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XKBCOMMON_CFLAGS_OTHER}")

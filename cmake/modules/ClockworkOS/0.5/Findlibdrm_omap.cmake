@@ -9,6 +9,6 @@ set_target_properties(libdrm_omap::libdrm_omap PROPERTIES INTERFACE_INCLUDE_DIRE
 set_target_properties(libdrm_omap::libdrm_omap PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBDRM_OMAP_LIBRARY_DIRS}")
 set_target_properties(libdrm_omap::libdrm_omap PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBDRM_OMAP_LIB_LIBRARIES}")
+                      "${LIBDRM_OMAP_LIBRARIES}")
 set_target_properties(libdrm_omap::libdrm_omap PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBDRM_OMAP_CFLAGS_OTHER}")

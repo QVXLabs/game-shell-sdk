@@ -9,6 +9,6 @@ set_target_properties(libpulse_mainloop_glib::libpulse_mainloop_glib PROPERTIES 
 set_target_properties(libpulse_mainloop_glib::libpulse_mainloop_glib PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBPULSE_MAINLOOP_GLIB_LIBRARY_DIRS}")
 set_target_properties(libpulse_mainloop_glib::libpulse_mainloop_glib PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBPULSE_MAINLOOP_GLIB_LIB_LIBRARIES}")
+                      "${LIBPULSE_MAINLOOP_GLIB_LIBRARIES}")
 set_target_properties(libpulse_mainloop_glib::libpulse_mainloop_glib PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBPULSE_MAINLOOP_GLIB_CFLAGS_OTHER}")

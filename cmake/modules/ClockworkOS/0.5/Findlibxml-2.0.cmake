@@ -9,6 +9,6 @@ set_target_properties(libxml_2.0::libxml_2.0 PROPERTIES INTERFACE_INCLUDE_DIRECT
 set_target_properties(libxml_2.0::libxml_2.0 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBXML_2.0_LIBRARY_DIRS}")
 set_target_properties(libxml_2.0::libxml_2.0 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBXML_2.0_LIB_LIBRARIES}")
+                      "${LIBXML_2.0_LIBRARIES}")
 set_target_properties(libxml_2.0::libxml_2.0 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBXML_2.0_CFLAGS_OTHER}")

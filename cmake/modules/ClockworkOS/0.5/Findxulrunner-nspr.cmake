@@ -9,6 +9,6 @@ set_target_properties(xulrunner_nspr::xulrunner_nspr PROPERTIES INTERFACE_INCLUD
 set_target_properties(xulrunner_nspr::xulrunner_nspr PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XULRUNNER_NSPR_LIBRARY_DIRS}")
 set_target_properties(xulrunner_nspr::xulrunner_nspr PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XULRUNNER_NSPR_LIB_LIBRARIES}")
+                      "${XULRUNNER_NSPR_LIBRARIES}")
 set_target_properties(xulrunner_nspr::xulrunner_nspr PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XULRUNNER_NSPR_CFLAGS_OTHER}")

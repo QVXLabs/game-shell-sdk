@@ -9,6 +9,6 @@ set_target_properties(cairo_ps::cairo_ps PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(cairo_ps::cairo_ps PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CAIRO_PS_LIBRARY_DIRS}")
 set_target_properties(cairo_ps::cairo_ps PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CAIRO_PS_LIB_LIBRARIES}")
+                      "${CAIRO_PS_LIBRARIES}")
 set_target_properties(cairo_ps::cairo_ps PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CAIRO_PS_CFLAGS_OTHER}")

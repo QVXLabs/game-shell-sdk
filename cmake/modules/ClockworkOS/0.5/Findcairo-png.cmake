@@ -9,6 +9,6 @@ set_target_properties(cairo_png::cairo_png PROPERTIES INTERFACE_INCLUDE_DIRECTOR
 set_target_properties(cairo_png::cairo_png PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${CAIRO_PNG_LIBRARY_DIRS}")
 set_target_properties(cairo_png::cairo_png PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${CAIRO_PNG_LIB_LIBRARIES}")
+                      "${CAIRO_PNG_LIBRARIES}")
 set_target_properties(cairo_png::cairo_png PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${CAIRO_PNG_CFLAGS_OTHER}")

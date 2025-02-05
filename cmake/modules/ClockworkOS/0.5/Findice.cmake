@@ -9,6 +9,6 @@ set_target_properties(ice::ice PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(ice::ice PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${ICE_LIBRARY_DIRS}")
 set_target_properties(ice::ice PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${ICE_LIB_LIBRARIES}")
+                      "${ICE_LIBRARIES}")
 set_target_properties(ice::ice PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${ICE_CFLAGS_OTHER}")

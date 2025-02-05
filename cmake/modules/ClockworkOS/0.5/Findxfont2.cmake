@@ -9,6 +9,6 @@ set_target_properties(xfont2::xfont2 PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xfont2::xfont2 PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XFONT2_LIBRARY_DIRS}")
 set_target_properties(xfont2::xfont2 PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XFONT2_LIB_LIBRARIES}")
+                      "${XFONT2_LIBRARIES}")
 set_target_properties(xfont2::xfont2 PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XFONT2_CFLAGS_OTHER}")

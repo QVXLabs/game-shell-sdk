@@ -9,6 +9,6 @@ set_target_properties(xorg_server::xorg_server PROPERTIES INTERFACE_INCLUDE_DIRE
 set_target_properties(xorg_server::xorg_server PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XORG_SERVER_LIBRARY_DIRS}")
 set_target_properties(xorg_server::xorg_server PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XORG_SERVER_LIB_LIBRARIES}")
+                      "${XORG_SERVER_LIBRARIES}")
 set_target_properties(xorg_server::xorg_server PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XORG_SERVER_CFLAGS_OTHER}")

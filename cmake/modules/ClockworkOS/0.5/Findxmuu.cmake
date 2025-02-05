@@ -9,6 +9,6 @@ set_target_properties(xmuu::xmuu PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xmuu::xmuu PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XMUU_LIBRARY_DIRS}")
 set_target_properties(xmuu::xmuu PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XMUU_LIB_LIBRARIES}")
+                      "${XMUU_LIBRARIES}")
 set_target_properties(xmuu::xmuu PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XMUU_CFLAGS_OTHER}")

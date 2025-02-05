@@ -9,6 +9,6 @@ set_target_properties(pangoxft::pangoxft PROPERTIES INTERFACE_INCLUDE_DIRECTORIE
 set_target_properties(pangoxft::pangoxft PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${PANGOXFT_LIBRARY_DIRS}")
 set_target_properties(pangoxft::pangoxft PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${PANGOXFT_LIB_LIBRARIES}")
+                      "${PANGOXFT_LIBRARIES}")
 set_target_properties(pangoxft::pangoxft PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${PANGOXFT_CFLAGS_OTHER}")

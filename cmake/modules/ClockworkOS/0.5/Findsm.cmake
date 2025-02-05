@@ -9,6 +9,6 @@ set_target_properties(sm::sm PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(sm::sm PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${SM_LIBRARY_DIRS}")
 set_target_properties(sm::sm PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${SM_LIB_LIBRARIES}")
+                      "${SM_LIBRARIES}")
 set_target_properties(sm::sm PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${SM_CFLAGS_OTHER}")

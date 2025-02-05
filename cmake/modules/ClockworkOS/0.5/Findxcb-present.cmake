@@ -9,6 +9,6 @@ set_target_properties(xcb_present::xcb_present PROPERTIES INTERFACE_INCLUDE_DIRE
 set_target_properties(xcb_present::xcb_present PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XCB_PRESENT_LIBRARY_DIRS}")
 set_target_properties(xcb_present::xcb_present PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XCB_PRESENT_LIB_LIBRARIES}")
+                      "${XCB_PRESENT_LIBRARIES}")
 set_target_properties(xcb_present::xcb_present PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XCB_PRESENT_CFLAGS_OTHER}")

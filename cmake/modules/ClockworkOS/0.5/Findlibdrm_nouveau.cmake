@@ -9,6 +9,6 @@ set_target_properties(libdrm_nouveau::libdrm_nouveau PROPERTIES INTERFACE_INCLUD
 set_target_properties(libdrm_nouveau::libdrm_nouveau PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${LIBDRM_NOUVEAU_LIBRARY_DIRS}")
 set_target_properties(libdrm_nouveau::libdrm_nouveau PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${LIBDRM_NOUVEAU_LIB_LIBRARIES}")
+                      "${LIBDRM_NOUVEAU_LIBRARIES}")
 set_target_properties(libdrm_nouveau::libdrm_nouveau PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${LIBDRM_NOUVEAU_CFLAGS_OTHER}")

@@ -9,6 +9,6 @@ set_target_properties(bigreqsproto::bigreqsproto PROPERTIES INTERFACE_INCLUDE_DI
 set_target_properties(bigreqsproto::bigreqsproto PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${BIGREQSPROTO_LIBRARY_DIRS}")
 set_target_properties(bigreqsproto::bigreqsproto PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${BIGREQSPROTO_LIB_LIBRARIES}")
+                      "${BIGREQSPROTO_LIBRARIES}")
 set_target_properties(bigreqsproto::bigreqsproto PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${BIGREQSPROTO_CFLAGS_OTHER}")

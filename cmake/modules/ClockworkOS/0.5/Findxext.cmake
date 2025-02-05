@@ -9,6 +9,6 @@ set_target_properties(xext::xext PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xext::xext PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XEXT_LIBRARY_DIRS}")
 set_target_properties(xext::xext PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XEXT_LIB_LIBRARIES}")
+                      "${XEXT_LIBRARIES}")
 set_target_properties(xext::xext PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XEXT_CFLAGS_OTHER}")

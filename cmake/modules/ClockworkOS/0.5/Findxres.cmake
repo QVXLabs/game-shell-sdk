@@ -9,6 +9,6 @@ set_target_properties(xres::xres PROPERTIES INTERFACE_INCLUDE_DIRECTORIES
 set_target_properties(xres::xres PROPERTIES INTERFACE_LINK_DIRECTORIES
                       "${XRES_LIBRARY_DIRS}")
 set_target_properties(xres::xres PROPERTIES INTERFACE_LINK_LIBRARIES
-                      "${XRES_LIB_LIBRARIES}")
+                      "${XRES_LIBRARIES}")
 set_target_properties(xres::xres PROPERTIES INTERFACE_COMPILE_OPTIONS
                       "${XRES_CFLAGS_OTHER}")
