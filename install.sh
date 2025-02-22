@@ -180,7 +180,7 @@ install() {
     popd
 
     # compile bin-utils
-    info "Building Binnnutils..."
+    info "Building Binutils..."
     pushd "$BUILD_PATH"
     build_binutils \
 	"$(tarball_directory download/$(tarball_filename $BINUTILS_URL))" \
