@@ -31,7 +31,11 @@ function popd() {
 }
 
 function num_cpus() {
-    python -c "import os; print(os.cpu_count())"
+	local py=$(command -v python || command -v python3)
+	if [ -z "$py" ]; then
+		error "Python not found on system"
+	fi
+	"$py" -c "import os; print(os.cpu_count())"	
 }
 
 tarball_filename() {
