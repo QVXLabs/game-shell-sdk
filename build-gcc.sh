@@ -1,17 +1,34 @@
 #!/bin/bash
 
-
-# configuration
+# default configuration
 BUILD_PATH="build"
+PREFIX_PATH="${PWD}/gcc"
+
 BINUTILS_URL="https://sourceware.org/pub/binutils/releases/binutils-2.44.tar.gz"
 GMP_URL="https://gmplib.org/download/gmp/gmp-6.3.0.tar.xz"
 MPFR_URL="https://www.mpfr.org/mpfr-current/mpfr-4.2.1.tar.gz"
 MPC_URL="https://ftp.gnu.org/gnu/mpc/mpc-1.3.1.tar.gz"
 GCC_URL="https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.gz"
 
-# build vars
-PREFIX_PATH="${PWD}/gcc/ClockworkOS/0.5"
+# other vars
 SYSROOT_PATH="${PWD}/sysroot/ClockworkOS/0.5"
+
+function error() {
+    echo >&2 -e "\033[0;31m [ERROR]: $1 \033[0m"
+    exit -1
+}
+
+function info() {
+    echo >&2 -e "\033[0;32m [INFO]: $1 \033[0m"
+}
+
+function pushd () {
+    command pushd "$@" > /dev/null
+}
+
+function popd () {
+    command popd "$@" > /dev/null
+}
 
 tarball_filename() {
     echo "$(basename $1)"
@@ -28,16 +45,15 @@ download_tarball() {
     local tarball=$(tarball_filename "$url")
 
     if [ ! -f "$tarball" ]; then
-	echo "$tarball not found, downloading"
+        info "$tarball not found, downloading"
 	wget -q "$url" -O "$tarball"
 	if [ $? -ne 0 ]; then
-	    echo "Download failed"
-	    return 1
+	    error "Download failed"
 	else
-	    echo "Download successful"
+	    info "Download successful"
         fi
     else
-	echo "$tarball already exists, skipping download"
+	info "$tarball already exists, skipping download"
     fi
     return 0
 }
@@ -46,10 +62,10 @@ extract_tarball() {
     local tarball=$1
     local src_dir=$(tarball_directory "$tarball")
     if [ ! -d "$src_dir" ]; then
-	echo "unpacking $tarball"
+	info "unpacking $tarball"
 	tar -xf "$tarball"
     else
-	echo "$tarball already extracted"
+	info "$tarball already extracted"
     fi
     return 0
 }
@@ -59,7 +75,7 @@ integrate_gcc_srctree() {
     local gmp_src=$2
     local mpfr_src=$3
     local mpc_src=$4
-    echo "Integrating GMP, MPFR and MPC into GCC source tree"
+    info "Integrating GMP, MPFR and MPC into GCC source tree"
     ln -s "../$gmp_src" "${gcc_src}/gmp"
     ln -s "../$mpfr_src" "${gcc_src}/mpfr"
     ln -s "../$mpc_src" "${gcc_src}/mpc"
@@ -104,52 +120,115 @@ build_gcc() {
     return 0    
 }
 
-# download & extract src
-download_path="$BUILD_PATH/download/" 
-mkdir -p "$download_path"
+install() {
+    # made output & build directory
+    mkdir -p "$PREFIX_PATH"
+    mkdir -p "$BUILD_PATH"
 
-download_url_list=(
-    "$BINUTILS_URL"
-    "$GMP_URL"
-    "$MPFR_URL"
-    "$MPC_URL"
-    "$GCC_URL"
-)
-for url in "${download_url_list[@]}"; do
-    # download object
-    pushd "$download_path"
-    download_tarball "$url"
-    popd
-    # extract object
+    # download & extract src
+    local download_path="$BUILD_PATH/download/" 
+    mkdir -p "$download_path"
+
+    local download_url_list=(
+	"$BINUTILS_URL"
+	"$GMP_URL"
+	"$MPFR_URL"
+	"$MPC_URL"
+	"$GCC_URL"
+    )
+    for url in "${download_url_list[@]}"; do
+	# download object
+	pushd "$download_path"
+	download_tarball "$url"
+	popd
+	# extract object
+	pushd "$BUILD_PATH"
+	extract_tarball "download/$(tarball_filename "$url")"
+	popd
+    done
+
+    # prepare gcc src tree byt placing gmp, mpfr & mpc inside
     pushd "$BUILD_PATH"
-    extract_tarball "download/$(tarball_filename "$url")"
+    integrate_gcc_srctree \
+	"$(tarball_directory download/$(tarball_filename $GCC_URL))" \
+	"$(tarball_directory download/$(tarball_filename $GMP_URL))" \
+	"$(tarball_directory download/$(tarball_filename $MPFR_URL))" \
+	"$(tarball_directory download/$(tarball_filename $MPC_URL))"
     popd
-done
 
-# prepare gcc src tree byt placing gmp, mpfr & mpc inside
-pushd "$BUILD_PATH"
-integrate_gcc_srctree \
-    "$(tarball_directory download/$(tarball_filename $GCC_URL))" \
-    "$(tarball_directory download/$(tarball_filename $GMP_URL))" \
-    "$(tarball_directory download/$(tarball_filename $MPFR_URL))" \
-    "$(tarball_directory download/$(tarball_filename $MPC_URL))"
-popd
+    # compile bin-utils
+    info "Building Binnnutils..."
+    pushd "$BUILD_PATH"
+    build_binutils \
+	"$(tarball_directory download/$(tarball_filename $BINUTILS_URL))" \
+	"${PREFIX_PATH}" \
+	"${SYSROOT_PATH}"
+    popd
 
-# compile bin-utils
-echo "Building Binnnutils..."
-pushd "$BUILD_PATH"
-build_binutils \
-    "$(tarball_directory download/$(tarball_filename $BINUTILS_URL))" \
-    "${PREFIX_PATH}" \
-    "${SYSROOT_PATH}"
-popd
+    # compile gcc
+    info "Building GCC..."
+    pushd "$BUILD_PATH"
+    build_gcc \
+	"$(tarball_directory download/$(tarball_filename $GCC_URL))" \
+	"${PREFIX_PATH}" \
+	"${SYSROOT_PATH}"    
+    popd    
+}
 
-# compile gcc
-echo "Building GCC..."
-pushd "$BUILD_PATH"
-build_gcc \
-    "$(tarball_directory download/$(tarball_filename $GCC_URL))" \
-    "${PREFIX_PATH}" \
-    "${SYSROOT_PATH}"    
-popd
+clean() {
+    info "Cleaning $PREFIX_PATH and $BUILD_PATH"
+    rm -rf "$PREFIX_PATH"
+    rm -rf "$BUILD_PATH"
+}
 
+usage() {
+    info "Install script for GameShell Dev SDK"
+    info "Released under the Apache 2.0 licnse"
+    info ""
+
+    info "Usage"
+    info "-a {clean|install}"
+    info "\t\tSet the desired action, clean or install"
+    info "\t\t\tclean:   cleans the compiler and tools"
+    info "\t\t\tinstall: installs the compiler and tools"
+
+    info "-s {sysroot path}"
+    info "\t\tOverrides default sysroot path, currently $SYSROOT_PATH"
+
+    info "-b"
+    info "\t\tOverrides default build path, currently $BUILD_PATH"
+    info ""
+
+    exit 0
+}
+
+if [[ ${#} -eq 0 ]]; then
+    usage
+else
+    ACTION="install"
+    while getopts ":a:s:b" arg;
+    do
+	case ${arg} in
+	    a)
+		ACTION="$OPTARG"
+		;;
+	    s)
+		SYSROOT_PATH="$OPTARG"
+		;;
+	    b)
+		BUILD_PATH="$OPTARG"
+		;;
+	    *)
+		usage
+		;;
+	esac
+    done
+    if [ "$ACTION" = "clean" ] ; then
+	clean
+    elif [ "$ACTION" = "install" ] ; then
+	install
+    else
+	error "Unknown Action: $ACTION"
+    fi
+fi
+		
