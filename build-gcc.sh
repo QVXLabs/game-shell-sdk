@@ -22,12 +22,16 @@ function info() {
     echo >&2 -e "\033[0;32m [INFO]: $1 \033[0m"
 }
 
-function pushd () {
+function pushd() {
     command pushd "$@" > /dev/null
 }
 
-function popd () {
+function popd() {
     command popd "$@" > /dev/null
+}
+
+function num_cpus() {
+    python -c "import os; print(os.cpu_count())"
 }
 
 tarball_filename() {
@@ -87,15 +91,23 @@ build_binutils() {
     local prefix_path="$2"
     local sysroot_path="$3"
     local bld_path="${src_path}-build"
+    local build_log="../binutils.log"
+    local ncpus=$(num_cpus)
 
     mkdir -p "${bld_path}"
     pushd "${bld_path}"
+
+    touch "$build_log"
+    info "Compiling Binutils with ${ncpus} processes -> $(realpath $build_log)"
+
     ../"${src_path}"/configure \
       --prefix="$prefix_path" \
       --with-sysroot="$sysroot_path" \
       --disable-nls \
-      --disable-multilib
-    make && make install
+      --disable-multilib \
+      &> "$build_log"
+    make -j"$ncpus" >> "$build_log" 2>&1
+    make install -j"$ncpus" >> "$build_log" 2>&1
     popd
     return 0
 }
@@ -105,17 +117,24 @@ build_gcc() {
     local prefix_path="$2"
     local sysroot_path="$3"
     local bld_path="${src_path}-build"
+    local build_log="../gcc.log"
+    local ncpus=$(num_cpus)
 
     mkdir -p "${bld_path}"
     pushd "${bld_path}"
+
+    touch "$build_log"
+    info "Compiling GCC with ${ncpus} processes -> $(realpath $build_log)"
+
     ../"${src_path}"/configure \
       --prefix="$prefix_path" \
       --with-sysroot="$sysroot_path" \
       --target=arm-linux-gnueabihf \
       --enable-languages=c,c++ \
       --disable-nls \
-      --disable-multilib 
-    make all-gcc && make install-gcc
+      --disable-multilib &> "$build_log"
+    make all-gcc -j"$ncpus" >> "$build_log" 2>&1
+    make install-gcc -j"$ncpus" >> "$build_log" 2>&1
     popd
     return 0    
 }
