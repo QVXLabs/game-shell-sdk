@@ -129,28 +129,27 @@ build_gcc() {
     pushd "${bld_path}"
 
     touch "$build_log"
-    info "Compiling GCC with ${ncpus} processes -> $(realpath $build_log)"
-	
+    info "Compiling GCC with ${ncpus} processes -> $(realpath $build_log)" 
     ../"${src_path}"/configure \
       --prefix="$prefix_path" \
       --with-sysroot="$sysroot_path" \
       --target=arm-linux-gnueabihf \
       --enable-languages=c,c++ \
-	  --with-cpu=cortex-a7 \
-	  --with-fpu=vfpv3-d16 \
-	  --with-mode=thumb \
-	  --enable-default-pie \
-	  --with-default-libstdcxx-abi=new \
+      --with-cpu=cortex-a7 \
+      --with-fpu=vfpv3-d16 \
+      --with-mode=thumb \
+      --enable-default-pie \
+      --with-default-libstdcxx-abi=new \
       --without-headers \
       --disable-nls \
-	  --enable-interwork \
+      --enable-interwork \
       --disable-multilib &> "$build_log"
     make all-gcc -j"$ncpus" >> "$build_log" 2>&1
     make all-target-libgcc -j"$ncpus" >> "$build_log" 2>&1
     make install-gcc -j"$ncpus" >> "$build_log" 2>&1
     make install-target-libgcc -j"$ncpus" >> "$build_log" 2>&1
     popd
-    return 0    
+    return 0
 }
 
 install() {
