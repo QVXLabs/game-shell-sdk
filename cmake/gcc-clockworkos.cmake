@@ -4,12 +4,15 @@ set(CMAKE_SYSTEM_PROCESSOR armv7l)
 
 get_filename_component(
   GAMESHELL_SDK_ROOT "${CMAKE_CURRENT_LIST_DIR}" DIRECTORY)
-  
-set(CMAKE_C_COMPILER "${GAMESHELL_SDK_ROOT}/bin/gcc-clockworkos-0.5")
-set(CMAKE_CXX_COMPILER "${GAMESHELL_SDK_ROOT}/bin/g++-clockworkos-0.5")
-set(CMAKE_ASM_COMPILER "${GAMESHELL_SDK_ROOT}/bin/as-clockworkos-0.5")
-set(CMAKE_AR "${GAMESHELL_SDK_ROOT}/bin/ar-clockworkos-0.5")
-set(CMAKE_RANLIB "${GAMESHELL_SDK_ROOT}/bin/ranlib-clockworkos-0.5")
+
+set(COMPILER_ROOT "${GAMESHELL_SDK_ROOT}/gcc/bin")
+set(CMAKE_C_COMPILER "${COMPILER_ROOT}/arm-linux-gnueabihf-gcc")
+set(CMAKE_CXX_COMPILER "${COMPILER_ROOT}/arm-linux-gnueabihf-g++")
+set(CMAKE_ASM_COMPILER "${COMPILER_ROOT}/arm-linux-gnueabihf-as")
+set(CMAKE_AR "${COMPILER_ROOT}/arm-linux-gnueabihf-ar")
+set(CMAKE_RANLIB "${COMPILER_ROOT}/arm-linux-gnueabihf-ranlib")
+# set(CMAKE_C_LINK_EXECUTABLE "${COMPILER_ROOT}/arm-linux-gnueabihf-ld")
+# set(CMAKE_CXX_LINK_EXECUTABLE "${COMPILER_ROOT}/arm-linux-gnueabihf-ld")
 
 set(DEFAULT_FLAGS "-mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard")
 if(CLOCKWORK_ENABLE_THUMB)
@@ -31,5 +34,5 @@ list(PREPEND
   "${GAMESHELL_SDK_ROOT}/cmake/modules/ClockworkOS/0.5")
 
 # update rpath for lima drivers
-set(CMAKE_BUILD_RPATH "/usr/lib/lima")
+#set(CMAKE_BUILD_RPATH "/usr/lib/lima")
 
